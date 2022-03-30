@@ -51,13 +51,23 @@ Ne verba patulosque numen vix libet Agitabitur signa lympha; non lacunae, mox cu
     
     <item>
       <title>Case Studies</title>
+      <link>https://augustin-consulting.co.uk/case_studies.bkp/</link>
+      <pubDate>Sat, 05 Feb 2022 09:39:43 +0100</pubDate>
+      
+      <guid>https://augustin-consulting.co.uk/case_studies.bkp/</guid>
+      <description>Below are some of the data science solutions we have implemented over recent months.
+ Simulating Biological Sample Flows Through Laboratory with Discrete Event Simulation ​ We recently collaborated with Univeristy of Southampton NHS Trust on a simulation project to try to understand and minimise delays of COVID-19 saliva testing.
+We worked together to design an discrete event model in python that produces projections for various metrics under different conditions. This enabled us to understand the implications of different triage and cohorting strategies and to quantify the risks.</description>
+    </item>
+    
+    <item>
+      <title>Case Studies</title>
       <link>https://augustin-consulting.co.uk/case_studies/</link>
       <pubDate>Sat, 05 Feb 2022 09:39:43 +0100</pubDate>
       
       <guid>https://augustin-consulting.co.uk/case_studies/</guid>
       <description>Below are some of the data science solutions we have implemented over recent months.
- Simulating Biological Sample Flows Through Laboratory with Discrete Event Simulation ​ We recently collaborated with Univeristy of Southampton NHS Trust on a simulation project to try to understand and minimise delays of COVID-19 saliva testing.
-We worked together to design an discrete event model in python that produces projections for various metrics under different conditions. This enabled us to understand the implications of different triage and cohorting strategies and to quantify the risks.</description>
+ </description>
     </item>
     
     <item>
