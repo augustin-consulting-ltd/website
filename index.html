@@ -50,7 +50,7 @@
 
 	</head>
 
-	<body hx-headers='{"X-CSRFToken": "8i9oHGJBrFWWtUZYQXeZ1Bo5WEXHlU1qCU4AbYfGjYrr5iNkE4M5HD9Bi1veInpr"}'>
+	<body hx-headers='{"X-CSRFToken": "CwNuwSN9VqVWruVgKLmcHGjRRO7LbWxuOHDi4KdSfBIpKdzXsN60CsiGE2N9Kpxx"}'>
 		<main>
 			<nav class="pl-6 bg-background h-16 flex justify-between items-center sticky top-0 z-50 block lg:hidden">
     <div class="flex flex-1 items-center justify-center">
@@ -816,7 +816,7 @@
         
     
 </div>
-<form id="contact-form" class="space-y-4">
+<form class="contact-form space-y-4">
     <div class="space-y-2 " >
     
         
@@ -2773,7 +2773,7 @@ From requirements and architecture through development, integration, deployment,
         
     
 </div>
-<form id="contact-form" class="space-y-4">
+<form class="contact-form space-y-4">
     <div class="space-y-2 " >
     
         
@@ -3517,7 +3517,7 @@ From requirements and architecture through development, integration, deployment,
         
     
 </div>
-<form id="contact-form" class="space-y-4">
+<form class="contact-form space-y-4">
     <div class="space-y-2 " >
     
         
@@ -3971,19 +3971,18 @@ if (document.readyState === 'loading') {
     function () {
       (formspree.q = formspree.q || []).push(arguments);
     };
-  formspree("initForm", {
-    formElement: "#contact-form",
-    formId: "xnqwpeba",
-  });
-  formspree("initForm", {
-    formElement: "#newsletter-form",
-    formId: "xnqwpeba",
+  
+  // Use a class selector to initialize all forms
+  document.querySelectorAll('.contact-form').forEach(form => {
+    formspree("initForm", {
+      formElement: form,
+      formId: "xnqwpeba",
+    });
   });
 
   //  appends the newsletter subscription status to the message before submission
   document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('contact-form');
-    if (form) {
+    document.querySelectorAll('.contact-form').forEach(form => {
       form.addEventListener('submit', () => {
         const messageTextarea = form.querySelector('textarea[name="message"]');
         const switchInput = form.querySelector('input[name="newsletter"]');
@@ -3993,7 +3992,7 @@ if (document.readyState === 'loading') {
           messageTextarea.value += `\n\nNewsletter: ${isSubscribed ? 'True' : 'False'}`;
         }
       });
-    }
+    });
   });
 </script>
 <script src="https://unpkg.com/@formspree/ajax@1" defer></script> 
