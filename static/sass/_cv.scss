@@ -1,0 +1,113 @@
+.resume-section-heading {
+	position: relative;
+	padding-left: 1rem;
+	font-size: 1.125rem;
+	letter-spacing: 0.15rem;
+	color: $theme-color-primary;
+   &:before {
+	   content: "";
+	    display: inline-block;
+	    width: 5px;
+	    height: 100%;
+	    background: $theme-color-primary;
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+   }
+}
+
+.resume-name {
+	font-weight: 900;
+	letter-spacing: 0.2rem;
+}
+
+.resume-tagline {
+	font-weight: 300;
+}
+
+.resume-contact {
+	border-left: 1px solid rgba(0, 0, 0, 0.08);
+	font-size: 0.75rem;
+}
+
+.resume-profile-image {
+	max-width: 120px;
+	height: auto;
+	/*	max-width: 10rem;
+	width: 10rem;
+  height: auto;
+  border-radius: 50%;*/
+}
+
+.resume-intro {
+	font-size: 0.875rem;
+}
+.resume-main {
+	.item-title {
+		font-size: 1rem;
+	}
+
+   .item-meta {
+	   font-size: 0.75rem;
+   }
+   .item-content
+   {
+		font-size: 0.875rem;
+   }
+}
+
+.resume-aside
+{
+	border-left: 1px solid rgba(0, 0, 0, 0.08);
+	.item
+	{
+		font-size: 0.875rem;
+	}
+	.item-title
+	{
+		font-size: 1rem;
+	}
+
+}
+
+
+.resume-education-list, .resume-awards-list
+{
+    font-size: 0.875rem;
+}
+
+
+.resume-degree-time-org, .resume-degree-time
+{
+	font-size: 0.75rem;
+}
+
+.resume-lang-list, .resume-interests-list
+{
+	font-size: 0.875rem;
+}
+
+.resume-social-list
+{
+	font-size: 0.75rem;
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px)
+{
+
+    .resume-aside
+	{
+	    border-left: 0;
+    }
+}
+
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px)
+{
+	.resume-contact
+	{
+	    border-left: 0;
+    }
+}

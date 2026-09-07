@@ -1,36 +1,48 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="" class="scroll-pt-20 scroll-smooth">
 	<head>
 		
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="N/A">
-<meta name="author" content="[object Object]">
+<meta name="description" content="I help businesses identify where technology can create measurable value—from reducing costs and improving efficiency to growing revenue and making better decisions.">
+<meta name="author" content="">
 <meta name="generator" content="11ty">
 
+<script>
+    // Apply stored theme immediately to prevent FOUC (Flash of Unstyled Content)
+    const storedTheme = localStorage.getItem('theme') || 'dark';
+    if (storedTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+    }
+</script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-84L96ZSPLH"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<link rel="stylesheet" href="/static/css/tailwind.css">
 
-        gtag('config', 'G-84L96ZSPLH');
-    </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-84L96ZSPLH"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'G-84L96ZSPLH');
+</script>
 
 <title>Augustin Consulting Ltd</title>
 
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.14.0/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.14.0/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.0/dist/cdn.min.js"></script>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" 
+    rel="stylesheet" 
+    type="text/css">
+
 <link rel="shortcut icon" href="/static/favicon.svg">
-
-<link rel="stylesheet" href=/assets/css/style.css>
-
 
 
 
@@ -38,21 +50,3983 @@
 
 	</head>
 
-	<body style="background-color: #13192f;">
+	<body hx-headers='{"X-CSRFToken": "yuHKBTDF0YSWvQSTr6euXHVyDX6rc0M8K8ylFjzzVYeDmhG9jyr0MRWez6BgQ6K4"}'>
 		<main>
-			<div class="content text-center">
-				
-				<img src = "./static/favicon.svg" alt="Company Logo" style="width: 400px"/>
-				<div class="h3" style="color: #f6fafd; font-weight: 100; text-transform: uppercase;">Coming Soon!</div>
-			</div>
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-	    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-	    crossorigin="anonymous"></script>
+			<nav class="pl-6 bg-background h-16 flex justify-between items-center sticky top-0 z-50 block lg:hidden">
+    <div class="flex flex-1 items-center justify-center">
+        
 
-<script type='text/javascript' 
-        charset='utf-8' 
-		src='/assets/scripts/script.js'></script>
+<div class="whitespace-nowrap block lg:hidden">
+	<a class="flex text-xl" href="#">
+		<img src="/static/favicon.svg" alt="Logo" width="30" height="30">
+		<span class="ps-3">Augustin Consulting Ltd</span>
+	</a>
+</div>
+    </div>
+    <div class="flex items-center">
+        
+        
+
+<div
+  x-data="{
+    open: false,
+
+    showSheet() {
+      this.open = true;
+      document.body.classList.add('overflow-hidden');
+    },
+
+    hideSheet() {
+      this.open = false;
+      document.body.classList.remove('overflow-hidden');
+    }
+  }"
+  x-init="
+    $watch('open', value => {
+      if (value) {
+        document.body.classList.add('overflow-hidden');
+      } else {
+        document.body.classList.remove('overflow-hidden');
+      }
+    })
+  "
+  @show-sheet.window="showSheet()"
+  @keydown.escape.window="if (open) hideSheet()"
+  
+>
+  
+    <div>
+    <div
+    @click="showSheet()"
+    class="block lg:hidden"
+    
+    >
+    
+        
+<button
+    class="
+    inline-flex
+    items-center
+    justify-center
+    gap-2
+    whitespace-nowrap
+    rounded-md
+    text-sm
+    font-medium
+    transition-colors
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:pointer-events-none
+    disabled:opacity-50
+    [&_svg]:pointer-events-none
+    [&_svg]:size-4
+    [&_svg]:shrink-0
+
+    hover:bg-accent hover:text-accent-foreground
+    
+
+    h-9 px-4 py-2
+    
+
+    
+    block lg:hidden
+    
+    "
+    
+>
+    
+            <i data-lucide="menu"></i>
+        
+</button>
+
+    
+    </div>
+</div>
+
+    
+
+<!-- Backdrop (clicking on this should close the sheet) -->
+<div
+  x-show="open"
+  x-transition:enter="ease-out duration-300"
+  x-transition:enter-start="opacity-0"
+  x-transition:enter-end="opacity-100"
+  x-transition:leave="ease-in duration-200"
+  x-transition:leave-start="opacity-100"
+  x-transition:leave-end="opacity-0"
+  class="fixed inset-0 z-50 bg-background/80 backdrop-blur-xs"
+  aria-hidden="true"
+  x-cloak
+  @click="hideSheet()"
+></div>
+
+<!-- Sheet Content -->
+<div
+  x-show="open"
+  class="fixed z-50 bg-background p-6 shadow-lg border
+    inset-y-0 right-0 h-full w-3/4 max-w-sm
+    
+    block lg:hidden"
+  x-transition:enter="transform transition ease-out duration-300"
+  x-transition:enter-start="translate-x-full"
+  x-transition:enter-end="translate-x-0 translate-y-0"
+  x-transition:leave="transform transition ease-in duration-200"
+  x-transition:leave-start="translate-x-0 translate-y-0"
+  x-transition:leave-end="translate-x-full"
+  role="dialog"
+  aria-modal="true"
+  x-cloak
+  @click.away="hideSheet()"
+  
+>
+  <!-- Close Button -->
+  
+<button
+    class="
+    inline-flex
+    items-center
+    justify-center
+    gap-2
+    whitespace-nowrap
+    rounded-md
+    text-sm
+    font-medium
+    transition-colors
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:pointer-events-none
+    disabled:opacity-50
+    [&_svg]:pointer-events-none
+    [&_svg]:size-4
+    [&_svg]:shrink-0
+
+    hover:bg-accent hover:text-accent-foreground
+    
+
+    h-9 px-4 py-2
+    
+
+    
+    absolute right-4 top-4 rounded-xs opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary
+    
+    "
+    type="button" class="absolute right-4 top-4 rounded-xs opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary" @click="hideSheet()"
+>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+      <path d="M18 6 6 18"></path>
+      <path d="m6 6 12 12"></path>
+    </svg>
+    <span class="sr-only">Close</span>
+  
+</button>
+
+
+  <!-- Content -->
+  <div class="pt-4">
+    
+        <div class="flex flex-col space-y-2 text-center sm:text-left block lg:hidden" >
+  
+            <div class="flex">
+                
+
+<div 
+    x-data="{
+        tooltipVisible: false,
+        tooltipText: 'Toggle theme',
+        tooltipArrow: true,
+        tooltipPosition: 'bottom',
+    }"
+    x-init="$refs.content.addEventListener('mouseenter', () => { tooltipVisible = true; }); $refs.content.addEventListener('mouseleave', () => { tooltipVisible = false; });"
+    class="relative">
+    
+    <div x-ref="tooltip" x-show="tooltipVisible" :class="{ 'top-0 left-1/2 -translate-x-1/2 -mt-0.5 -translate-y-full' : tooltipPosition == 'top', 'top-1/2 -translate-y-1/2 -ml-0.5 left-0 -translate-x-full' : tooltipPosition == 'left', 'bottom-0 left-1/2 -translate-x-1/2 -mb-0.5 translate-y-full' : tooltipPosition == 'bottom', 'top-1/2 -translate-y-1/2 -mr-0.5 right-0 translate-x-full' : tooltipPosition == 'right' }" class="absolute w-auto text-sm" x-cloak>
+        <div x-show="tooltipVisible" x-transition class="relative px-2 py-1 text-white rounded bg-black/90">
+            <p x-text="tooltipText" class="block flex-shrink-0 text-xs whitespace-nowrap"></p>
+            <div x-ref="tooltipArrow" x-show="tooltipArrow" :class="{ 'bottom-0 -translate-x-1/2 left-1/2 w-2.5 translate-y-full' : tooltipPosition == 'top', 'right-0 -translate-y-1/2 top-1/2 h-2.5 -mt-px translate-x-full' : tooltipPosition == 'left', 'top-0 -translate-x-1/2 left-1/2 w-2.5 -translate-y-full' : tooltipPosition == 'bottom', 'left-0 -translate-y-1/2 top-1/2 h-2.5 -mt-px -translate-x-full' : tooltipPosition == 'right' }" class="inline-flex overflow-hidden absolute justify-center items-center">
+                <div :class="{ 'origin-top-left -rotate-45' : tooltipPosition == 'top', 'origin-top-left rotate-45' : tooltipPosition == 'left', 'origin-bottom-left rotate-45' : tooltipPosition == 'bottom', 'origin-top-right -rotate-45' : tooltipPosition == 'right' }" class="w-1.5 h-1.5 transform bg-black/90"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div x-ref="content">
+    
+<button
+    class="
+    inline-flex
+    items-center
+    justify-center
+    gap-2
+    whitespace-nowrap
+    rounded-md
+    text-sm
+    font-medium
+    transition-colors
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:pointer-events-none
+    disabled:opacity-50
+    [&_svg]:pointer-events-none
+    [&_svg]:size-4
+    [&_svg]:shrink-0
+
+    hover:bg-accent hover:text-accent-foreground
+    
+
+    h-9 px-4 py-2
+    
+
+    
+    theme-toggle [&amp;_svg]:size-6! size-14!
+    
+    "
+    class="theme-toggle [&_svg]:size-6! size-14!"
+>
+    
+        <i data-lucide="sun-moon" stroke-width="1"></i>
+    
+</button>
+
+</div>
+</div>
+
+            </div>
+            
+            <p class="text-sm text-muted-foreground block lg:hidden" >
+  
+                <div class="space-y-4 px-2 pb-3 pt-2">
+    
+    <a 
+        href="#expertise"
+        @click="hideSheet()"
+        class="block text-center" 
+        >
+            Expertise
+        </a>
+    
+    <a 
+        href="#about"
+        @click="hideSheet()"
+        class="block text-center" 
+        >
+            About
+        </a>
+    
+    <a 
+        href="#team"
+        @click="hideSheet()"
+        class="block text-center" 
+        >
+            Team
+        </a>
+    
+    <a 
+        href="#clients"
+        @click="hideSheet()"
+        class="block text-center" 
+        >
+            Selected Clients
+        </a>
+    
+    <a 
+        href="#faq"
+        @click="hideSheet()"
+        class="block text-center" 
+        >
+            FAQ
+        </a>
+    
+    <a 
+        href="#book-consultation"
+        @click="hideSheet()"
+        class="block text-center" 
+        >
+            Book Consultation
+        </a>
+    
+    <a 
+        href="#newsletter"
+        @click="hideSheet()"
+        class="block text-center" 
+        >
+            Newsletter
+        </a>
+    
+</div>
+            
+</p>
+
+        
+</div>
+
+    
+  </div>
+</div>
+
+
+</div>
+
+        
+        
+    </div>
+</nav>
+
+<nav class="pl-6 bg-background h-16 flex justify-between items-center sticky top-0 z-50 max-lg:hidden">
+    
+
+<div class="whitespace-nowrap max-lg:hidden">
+	<a class="flex text-xl" href="#">
+		<img src="/static/favicon.svg" alt="Logo" width="30" height="30">
+		<span class="ps-3">Augustin Consulting Ltd</span>
+	</a>
+</div>
+    <div class="flex items-center">
+        <nav
+  x-data="{
+    activeIndex: null,
+    setActiveIndex(index) {
+      this.activeIndex = index === this.activeIndex ? null : index;
+    },
+    closeAll() {
+      this.activeIndex = null;
+    }
+  }"
+  @click.away="closeAll()"
+  @keydown.escape.window="closeAll()"
+  class="relative z-10 max-lg:hidden"
+  class="max-lg:hidden"
+>
+  
+            <ul
+  class="flex flex-1 list-none items-center justify-center gap-1 max-lg:hidden"
+  
+>
+  
+                
+                <li class="relative max-lg:hidden" >
+  
+                    <a
+  class="block select-none rounded-md p-3 leading-none no-underline outline-hidden text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground max-lg:hidden"
+  href="#expertise"
+>
+  
+                        Expertise
+                    
+</a>
+
+                
+</li>
+
+                
+                <li class="relative max-lg:hidden" >
+  
+                    <a
+  class="block select-none rounded-md p-3 leading-none no-underline outline-hidden text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground max-lg:hidden"
+  href="#about"
+>
+  
+                        About
+                    
+</a>
+
+                
+</li>
+
+                
+                <li class="relative max-lg:hidden" >
+  
+                    <a
+  class="block select-none rounded-md p-3 leading-none no-underline outline-hidden text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground max-lg:hidden"
+  href="#team"
+>
+  
+                        Team
+                    
+</a>
+
+                
+</li>
+
+                
+                <li class="relative max-lg:hidden" >
+  
+                    <a
+  class="block select-none rounded-md p-3 leading-none no-underline outline-hidden text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground max-lg:hidden"
+  href="#clients"
+>
+  
+                        Selected Clients
+                    
+</a>
+
+                
+</li>
+
+                
+                <li class="relative max-lg:hidden" >
+  
+                    <a
+  class="block select-none rounded-md p-3 leading-none no-underline outline-hidden text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground max-lg:hidden"
+  href="#faq"
+>
+  
+                        FAQ
+                    
+</a>
+
+                
+</li>
+
+                
+                <li class="relative max-lg:hidden" >
+  
+                    <a
+  class="block select-none rounded-md p-3 leading-none no-underline outline-hidden text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground max-lg:hidden"
+  href="#book-consultation"
+>
+  
+                        Book Consultation
+                    
+</a>
+
+                
+</li>
+
+                
+                <li class="relative max-lg:hidden" >
+  
+                    <a
+  class="block select-none rounded-md p-3 leading-none no-underline outline-hidden text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground max-lg:hidden"
+  href="#newsletter"
+>
+  
+                        Newsletter
+                    
+</a>
+
+                
+</li>
+
+                
+            
+</ul>
+
+        
+</nav>
+
+        
+
+<div 
+    x-data="{
+        tooltipVisible: false,
+        tooltipText: 'Toggle theme',
+        tooltipArrow: true,
+        tooltipPosition: 'bottom',
+    }"
+    x-init="$refs.content.addEventListener('mouseenter', () => { tooltipVisible = true; }); $refs.content.addEventListener('mouseleave', () => { tooltipVisible = false; });"
+    class="relative">
+    
+    <div x-ref="tooltip" x-show="tooltipVisible" :class="{ 'top-0 left-1/2 -translate-x-1/2 -mt-0.5 -translate-y-full' : tooltipPosition == 'top', 'top-1/2 -translate-y-1/2 -ml-0.5 left-0 -translate-x-full' : tooltipPosition == 'left', 'bottom-0 left-1/2 -translate-x-1/2 -mb-0.5 translate-y-full' : tooltipPosition == 'bottom', 'top-1/2 -translate-y-1/2 -mr-0.5 right-0 translate-x-full' : tooltipPosition == 'right' }" class="absolute w-auto text-sm" x-cloak>
+        <div x-show="tooltipVisible" x-transition class="relative px-2 py-1 text-white rounded bg-black/90">
+            <p x-text="tooltipText" class="block flex-shrink-0 text-xs whitespace-nowrap"></p>
+            <div x-ref="tooltipArrow" x-show="tooltipArrow" :class="{ 'bottom-0 -translate-x-1/2 left-1/2 w-2.5 translate-y-full' : tooltipPosition == 'top', 'right-0 -translate-y-1/2 top-1/2 h-2.5 -mt-px translate-x-full' : tooltipPosition == 'left', 'top-0 -translate-x-1/2 left-1/2 w-2.5 -translate-y-full' : tooltipPosition == 'bottom', 'left-0 -translate-y-1/2 top-1/2 h-2.5 -mt-px -translate-x-full' : tooltipPosition == 'right' }" class="inline-flex overflow-hidden absolute justify-center items-center">
+                <div :class="{ 'origin-top-left -rotate-45' : tooltipPosition == 'top', 'origin-top-left rotate-45' : tooltipPosition == 'left', 'origin-bottom-left rotate-45' : tooltipPosition == 'bottom', 'origin-top-right -rotate-45' : tooltipPosition == 'right' }" class="w-1.5 h-1.5 transform bg-black/90"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div x-ref="content">
+    
+<button
+    class="
+    inline-flex
+    items-center
+    justify-center
+    gap-2
+    whitespace-nowrap
+    rounded-md
+    text-sm
+    font-medium
+    transition-colors
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:pointer-events-none
+    disabled:opacity-50
+    [&_svg]:pointer-events-none
+    [&_svg]:size-4
+    [&_svg]:shrink-0
+
+    hover:bg-accent hover:text-accent-foreground
+    
+
+    h-9 px-4 py-2
+    
+
+    
+    theme-toggle [&amp;_svg]:size-6! size-14!
+    
+    "
+    class="theme-toggle [&_svg]:size-6! size-14!"
+>
+    
+        <i data-lucide="sun-moon" stroke-width="1"></i>
+    
+</button>
+
+</div>
+</div>
+
+    </div>
+</nav>
+
+			<div class="container mx-auto px-2 lg:px-12">
+			    
+<div class="flex flex-col gap-16">
+  <section id="" 
+    class="grid grid-cols-1 lg:grid-cols-2 lg:gap-24 justify-center items-center bg-background"
+    class="grid grid-cols-1 lg:grid-cols-2 lg:gap-24 justify-center items-center bg-background" >
+  
+    <div class="order-first lg:order-last col-start-1 row-start-1 lg:col-start-auto lg:row-start-auto z-0 relative opacity-40 lg:opacity-100 blur-xs lg:blur-none">
+        <!-- Chart Container (Relative context for absolute positioning) -->
+<div class="relative w-full max-w-lg aspect-square">
+  
+  <!-- Canvas Fill Container -->
+  <canvas class="cta-chart w-full h-full block"></canvas>
+
+  <!-- Overlaid Description List Legend -->
+  <dl class="absolute bottom-3 right-3 bg-background/20 backdrop-blur-sm p-3 rounded-lg shadow-xs text-sm text-foreground pointer-events-none grid grid-cols-2 gap-1">
+    
+      <div class="flex items-center gap-1.5">
+        <dt class="text-foreground min-w-[1rem]">1:</dt>
+        <dd>Revenue Growth</dd>
+      </div>
+    
+      <div class="flex items-center gap-1.5">
+        <dt class="text-foreground min-w-[1rem]">2:</dt>
+        <dd>Cost Reduction</dd>
+      </div>
+    
+      <div class="flex items-center gap-1.5">
+        <dt class="text-foreground min-w-[1rem]">3:</dt>
+        <dd>Operational Efficiency</dd>
+      </div>
+    
+      <div class="flex items-center gap-1.5">
+        <dt class="text-foreground min-w-[1rem]">4:</dt>
+        <dd>Customer Experience</dd>
+      </div>
+    
+      <div class="flex items-center gap-1.5">
+        <dt class="text-foreground min-w-[1rem]">5:</dt>
+        <dd>Innovation</dd>
+      </div>
+    
+      <div class="flex items-center gap-1.5">
+        <dt class="text-foreground min-w-[1rem]">6:</dt>
+        <dd>Risk &amp; Resilience</dd>
+      </div>
+    
+      <div class="flex items-center gap-1.5">
+        <dt class="text-foreground min-w-[1rem]">7:</dt>
+        <dd>Decision-Making</dd>
+      </div>
+    
+  </dl>
+</div>
+    </div>
+    <div class="order-last lg:order-first col-start-1 row-start-1 lg:col-start-auto lg:row-start-auto z-10 relative self-end">
+        <h1 class="text-4xl font-bold">Augustin Consulting Ltd.</h1>
+        <p class="text-xl py-3">Technology that delivers results.</p>
+        <p class="pb-3">I help businesses identify where technology can create measurable value—from reducing costs and improving efficiency to growing revenue and making better decisions.</p>
+        
+
+<div
+  x-data="{
+    open: false,
+
+    showDialog() {
+      this.open = true;
+      document.body.classList.add('overflow-hidden');
+    },
+
+    hideDialog() {
+      this.open = false;
+      document.body.classList.remove('overflow-hidden');
+    }
+  }"
+  x-init="
+    $watch('open', value => {
+      if (value) {
+        document.body.classList.add('overflow-hidden');
+      } else {
+        document.body.classList.remove('overflow-hidden');
+      }
+    })
+  "
+  @show-dialog.window="showDialog()"
+  @keydown.escape.window="if (open) hideDialog()"
+  
+>
+  
+    
+
+
+  
+<button
+    class="
+    inline-flex
+    items-center
+    justify-center
+    gap-2
+    whitespace-nowrap
+    rounded-md
+    text-sm
+    font-medium
+    transition-colors
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:pointer-events-none
+    disabled:opacity-50
+    [&_svg]:pointer-events-none
+    [&_svg]:size-4
+    [&_svg]:shrink-0
+
+    bg-primary text-primary-foreground shadow-sm hover:bg-primary/90
+    
+
+    h-9 px-4 py-2
+    
+
+    
+    "
+    @click.stop="showDialog()" class="" {{ attrs }}
+>
+    
+    
+        Get in Touch
+    
+  
+</button>
+
+
+
+    <div
+  x-show="open"
+  x-transition:enter="ease-out duration-300"
+  x-transition:enter-start="opacity-0"
+  x-transition:enter-end="opacity-100"
+  x-transition:leave="ease-in duration-200"
+  x-transition:leave-start="opacity-100"
+  x-transition:leave-end="opacity-0"
+  class="fixed inset-0 z-50 flex items-center justify-center z-60! text-left"
+  x-cloak
+  role="dialog"
+  aria-modal="true"
+>
+  <!-- Backdrop -->
+  <div class="fixed inset-0 bg-background/80 backdrop-blur-xs" aria-hidden="true" @click="hideDialog"></div>
+
+  <!-- Dialog -->
+  <div
+    x-transition:enter="ease-out duration-300"
+    x-transition:enter-start="opacity-0 scale-95"
+    x-transition:enter-end="opacity-100 scale-100"
+    x-transition:leave="ease-in duration-200"
+    x-transition:leave-start="opacity-100 scale-100"
+    x-transition:leave-end="opacity-0 scale-95"
+    @click.away="hideDialog"
+    class="fixed z-50 grid w-full max-w-lg gap-4 border bg-background p-6 shadow-lg sm:rounded-lg md:w-full z-60! text-left"
+    x-init="$nextTick(() => { $el.querySelector('button, [tabindex], input, select, textarea') && $el.querySelector('button, [tabindex], input, select, textarea').focus() })"
+    tabindex="-1"
+    class="z-60! text-left"
+  >
+    
+<button
+    class="
+    inline-flex
+    items-center
+    justify-center
+    gap-2
+    whitespace-nowrap
+    rounded-md
+    text-sm
+    font-medium
+    transition-colors
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:pointer-events-none
+    disabled:opacity-50
+    [&_svg]:pointer-events-none
+    [&_svg]:size-4
+    [&_svg]:shrink-0
+
+    hover:bg-accent hover:text-accent-foreground
+    
+
+    h-9 px-4 py-2
+    
+
+    
+    absolute right-4 top-4 data-[state=open]:bg-accent data-[state=open]:text-muted-foreground
+    
+    "
+    type="button" class="absolute right-4 top-4 data-[state=open]:bg-accent data-[state=open]:text-muted-foreground" @click="hideDialog"
+>
+    
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+        <path d="M18 6 6 18"></path>
+        <path d="m6 6 12 12"></path>
+      </svg>
+      <span class="sr-only">Close</span>
+    
+</button>
+
+    
+        <div class="flex flex-col space-y-1.5 text-center sm:text-left " >
+  
+            <h2 class="text-lg font-semibold leading-none tracking-tight " >
+  Contact
+</h2>
+
+            <p class="text-sm text-muted-foreground " >
+  
+                <p class="py-4">Send us a message by <a href="#">email</a>, or use this form.</p>
+            
+</p>
+
+        
+</div>
+
+        
+
+<div data-fs-success>Thank you for your message!</div>
+<div data-fs-error>
+    Submission failed.
+    
+        
+            Contact us at augustin.consulting.ltd@gmail.com.
+        
+    
+        
+    
+</div>
+<form id="contact-form" class="space-y-4">
+    <div class="space-y-2 " >
+    
+        
+
+<label
+    class="
+    text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70
+    
+        
+    
+    
+    
+    
+    "
+    class="
+    
+    
+    " {{ attrs }}
+>
+    
+    <label for="id_email">Email:</label>
+
+</label>
+
+
+        <input
+    class="
+    flex
+    h-9
+    w-full
+    rounded-md
+    border
+    border-input
+    bg-transparent
+    px-3
+    py-1
+    text-sm
+    shadow-xs
+    transition-colors
+    file:border-0
+    file:bg-transparent
+    file:text-sm
+    file:font-medium
+    placeholder:text-muted-foreground
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:cursor-not-allowed
+    disabled:opacity-50
+    md:text-sm
+    
+    "
+    type="email" id="id_email" placeholder="example@email.com" name="email" value="" data-fs-field
+>
+    
+</input>
+
+        <div class="text-[0.8rem] font-medium text-destructive " data-fs-error="email">
+    
+        
+</div>
+
+        <p class="text-sm text-muted-foreground " >
+  
+            
+        
+</p>
+
+    
+</div>
+
+    
+    <div class="space-y-2 " >
+    
+        
+
+<label
+    class="
+    text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70
+    
+        
+    
+    
+    
+    
+    "
+    class="
+    
+    
+    " {{ attrs }}
+>
+    
+    <label for="id_subject">Subject:</label>
+
+</label>
+
+
+        <input
+    class="
+    flex
+    h-9
+    w-full
+    rounded-md
+    border
+    border-input
+    bg-transparent
+    px-3
+    py-1
+    text-sm
+    shadow-xs
+    transition-colors
+    file:border-0
+    file:bg-transparent
+    file:text-sm
+    file:font-medium
+    placeholder:text-muted-foreground
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:cursor-not-allowed
+    disabled:opacity-50
+    md:text-sm
+    
+    "
+    type="text" id="id_subject" placeholder="Subject" name="subject" value="" data-fs-field
+>
+    
+</input>
+
+        <div class="text-[0.8rem] font-medium text-destructive " data-fs-error="subject">
+    
+        
+</div>
+
+        <p class="text-sm text-muted-foreground " >
+  
+            
+        
+</p>
+
+    
+</div>
+
+    
+    <div class="space-y-2 " >
+    
+        
+
+<label
+    class="
+    text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70
+    
+        
+    
+    
+    
+    
+    "
+    class="
+    
+    
+    " {{ attrs }}
+>
+    
+    <label for="id_message">Message:</label>
+
+</label>
+
+
+        <textarea
+    class="
+    flex
+    min-h-[60px]
+    w-full
+    rounded-md
+    border
+    border-input
+    bg-transparent
+    px-3
+    py-2
+    text-sm
+    shadow-xs
+    placeholder:text-muted-foreground
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:cursor-not-allowed
+    disabled:opacity-50
+
+    
+        h-50
+    
+    "
+    id="id_message" placeholder="Message" class="h-50" name="message" value="" data-fs-field
+>
+</textarea>
+
+        <div class="text-[0.8rem] font-medium text-destructive " data-fs-error="message">
+    
+        
+</div>
+
+        <p class="text-sm text-muted-foreground " >
+  
+            
+        
+</p>
+
+    
+</div>
+
+
+    <div class="space-y-2 " >
+    
+        
+
+<div x-data="{ switchOn: true }" class="flex items-center justify-center space-x-2">
+    <label @click="$refs.switchButton.click(); $refs.switchButton.focus()" :id="$id('switch')" 
+        class="text-sm select-none"
+        x-cloak>
+        
+            Stay in the loop with periodic industry insights and updates from our team.
+        
+    </label>
+
+    <input id="thisId" type="checkbox" name="newsletter" class="hidden" :checked="switchOn">
+
+    <button 
+        x-ref="switchButton"
+        type="button" 
+        @click="switchOn = ! switchOn"
+        :class="switchOn ? 'bg-primary' : 'bg-muted'" 
+        class="relative inline-flex h-6 py-0.5 ml-4 focus:outline-none rounded-full w-10"
+        x-cloak>
+        <span :class="switchOn ? 'translate-x-[18px]' : 'translate-x-0.5'" class="w-5 h-5 duration-200 ease-in-out bg-background rounded-full shadow-md"></span>
+    </button>
+</div>
+
+    
+</div>
+
+    
+    <div class="text-right">
+        
+<button
+    class="
+    inline-flex
+    items-center
+    justify-center
+    gap-2
+    whitespace-nowrap
+    rounded-md
+    text-sm
+    font-medium
+    transition-colors
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:pointer-events-none
+    disabled:opacity-50
+    [&_svg]:pointer-events-none
+    [&_svg]:size-4
+    [&_svg]:shrink-0
+
+    bg-primary text-primary-foreground shadow-sm hover:bg-primary/90
+    
+
+    h-9 px-4 py-2
+    
+
+    
+    "
+    type="submit" data-fs-submit-btn
+>
+    
+            Send Message
+        
+</button>
+
+    </div>
+</form>
+
+
+    
+  </div>
+</div>
+
+
+</div>
+
+
+    </div>
+
+</section>
+  
+   	
+        
+
+<section id="expertise" 
+    class="mx-auto"
+    id="expertise" class="mx-auto" >
+  
+    <h2 class="text-center mb-4 text-2xl">What I Do</h2>
+    <div class="grid grid-cols-1 gap-y-6 justify-center justify-items-center lg:grid-cols-2 lg:gap-x-24">
+    
+    
+        
+
+<div class="
+    rounded-xl border bg-card text-card-foreground shadow-sm
+    
+        w-96 border-none shadow-none!
+    
+    "
+    class="w-96 border-none shadow-none!"
+>
+    
+    <figure class="pt-6 pb-3 rounded-t-md w-full feature-icon-wrapper mx-auto flex items-center justify-center">
+        <div class="size-24">
+        
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#111" transform="matrix(.69 0 0 .69 15.5 15.5)" viewBox="0 0 164 164">
+        <path d="M56.3 145.6h22.6c.5 0 .9-.4.9-.9s-.4-.9-.9-.9H56.3c-.5 0-.9.4-.9.9s.4.9.9.9zM82.5 145.6h3.7c.5 0 .9-.4.9-.9s-.4-.9-.9-.9h-3.7c-.5 0-.9.4-.9.9s.4.9.9.9zM89.4 145.6h2.5c.5 0 .9-.4.9-.9s-.4-.9-.9-.9h-2.5c-.5 0-.9.4-.9.9s.4.9.9.9zM84.2 149.3c0 .5.4.9.9.9h22.6c.5 0 .9-.4.9-.9s-.4-.9-.9-.9H85.1c-.5-.1-.9.4-.9.9zM76.8 149.3c0 .5.4.9.9.9h3.7c.5 0 .9-.4.9-.9s-.4-.9-.9-.9h-3.7c-.5-.1-.9.4-.9.9zM74.6 148.3h-2.5c-.5 0-.9.4-.9.9s.4.9.9.9h2.5c.5 0 .9-.4.9-.9s-.4-.9-.9-.9zM44.9 82.1l-3.3 1.5c-.5.2-.7.8-.5 1.2.2.3.5.6.9.6.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.3-.5-.9-.7-1.3-.5zM24.9 91.1l-3.3 1.5c-.5.2-.7.8-.5 1.2.2.3.5.6.9.6.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.3-.5-.9-.8-1.3-.5zM38.2 85.1l-3.3 1.5c-.5.2-.7.8-.5 1.2.2.3.5.6.9.6.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.3-.5-.8-.7-1.3-.5zM18.2 94l-3.3 1.5c-.5.2-.7.8-.5 1.2.2.3.5.6.9.6.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.3-.5-.8-.7-1.3-.5zM4.5 101.2c-.2-.5-.8-.7-1.2-.5l-1.7.8c-.4.1-.6.5-.6.8s.2.7.6.9l1.7.8c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.4 0-.9-.3-1.1.2-.3.4-.8.2-1.2zM76.6 136.7c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.2.5 0 1 .5 1.2l3.2 1.5zM56.6 127.8c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.2.5 0 1 .5 1.2l3.2 1.5zM43.3 121.8c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.2.5 0 1 .5 1.2l3.2 1.5zM63.3 130.8c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.2.5 0 1 .5 1.2l3.2 1.5zM69.9 133.8c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5s0 1 .5 1.2l3.2 1.5zM36.6 118.8c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.2.5 0 1 .5 1.2l3.2 1.5zM26.6 114.4l3.3 1.5c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.3.4-.1 1 .4 1.2zM19.4 110.2c-.2.5 0 1 .5 1.2l3.3 1.5c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.3.5zM49.9 124.8c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.2.5 0 1 .5 1.2l3.2 1.5zM12.8 107.2c-.2.5 0 1 .5 1.2l3.3 1.5c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.6-.2-1.1 0-1.3.5z"/>
+        <path d="M156.7 103.7l-3.3 1.5s-.1 0-.1.1c-.3.1-.6.3-.7.7-3.6 12.1-10.3 22.7-19 31.3h-49v-.2c-.2-.5-.8-.7-1.2-.5l-1.3.6-1.3-.6c-.5-.2-1 0-1.2.5v.2h-49c-8.7-8.5-15.3-19.1-18.9-31.2-.1-.3-.4-.6-.7-.7l-.1-.1-3.3-1.5c-.5-.2-1 0-1.2.5-.2.5 0 1 .5 1.2l3.2 1.4c9.3 30.4 37.6 53.4 72.2 53.4 34.5 0 62.9-23 72.2-53.4l3.2-1.4c.5-.2.7-.8.5-1.2-.5-.6-1.1-.8-1.5-.6zM82 158.4c-18.7 0-36.3-7.3-49.6-19.4h99.2c-13.3 12.2-30.9 19.4-49.6 19.4z"/>
+        <path d="M113.7 124.9c.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.2-.5l-3.3 1.5c-.5.2-.7.8-.5 1.2.1.4.4.6.8.6zM120.4 121.9c.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2s-.8-.7-1.2-.5l-3.3 1.5c-.5.2-.7.8-.5 1.2.1.4.4.6.8.6zM127 118.9c.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.2-.5l-3.3 1.5c-.5.2-.7.8-.5 1.2.1.4.5.6.8.6zM133.7 115.9c.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.2-.5l-3.3 1.5c-.5.2-.7.8-.5 1.2.1.4.4.6.8.6zM146.2 109.4c.2.3.5.6.9.6.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.2-.5l-3.3 1.5c-.6.2-.8.8-.6 1.2zM139.5 112.4c.2.3.5.6.9.6.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.2-.5l-3.3 1.5c-.6.2-.8.7-.6 1.2zM87 136.8c.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.2-.5l-3.3 1.5c-.5.2-.7.8-.5 1.2.1.4.5.6.8.6zM93.7 133.8c.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.2-.5l-3.3 1.5c-.5.2-.7.8-.5 1.2.1.4.4.6.8.6zM100.4 130.9c.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.2-.5l-3.3 1.5c-.5.2-.7.8-.5 1.2.1.3.4.6.8.6zM107 127.9c.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.2-.5l-3.3 1.5c-.5.2-.7.8-.5 1.2.1.4.5.6.8.6zM162.4 101.5l-1.7-.8c-.5-.2-1 0-1.2.5-.2.4 0 .9.3 1.1-.4.3-.5.7-.3 1.1.2.3.5.6.9.6.1 0 .3 0 .4-.1l1.7-.8c.3-.2.6-.5.6-.9s-.3-.6-.7-.7zM157.4 99.2l-1.2-.5c.8-4.5 1.3-9.2 1.3-13.9 0-41.6-33.9-75.5-75.5-75.5-5.4 0-10.8.6-16 1.7L49.8 3.8c-.2-.1-.5-.1-.8 0l-21.7 9.7h-.1-.1-.1s-.1 0-.1.1l-.1.1s0 .1-.1.1c0 0 0 .1-.1.1v19.3C13.7 47.4 6.5 65.6 6.5 84.8c0 4.7.4 9.5 1.3 14-.2.3-.2.6-.1.9.2.3.5.6.9.6.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.3-.5l-2 .9c-.8-4.3-1.2-8.7-1.2-13.1 0-18 6.5-35.2 18.4-48.7v69.7c0 .4.2.7.6.9l21.7 9.7c.1 0 .2.1.3.1h.1c.1 0 .2 0 .3-.1h.1l9.6-4.3 20.5 9.2c.1 0 .2.1.3.1.1 0 .2 0 .3-.1l21.7-9.7c.1-.1.3-.2.4-.3l11.5 5.1h.1c.1 0 .2 0 .3.1h.1c.1 0 .2 0 .3-.1l21.7-9.7c.3-.2.6-.5.6-.9V92c.3-.1.5-.2.7-.5.2-.5 0-1-.5-1.2l-.2-.1V40.5v-.2-.1c0-.1 0-.1-.1-.1 0 0 0-.1-.1-.1l-.1-.1s-.1 0-.1-.1h-.1-.1-.1L115 30c-.2-.1-.5-.1-.8 0l-21.7 9.7h-.1l-.1.1-.1.1-.1.1v.1c0 .1-.1.1-.1.2V69.1L80.7 64c-.2-.1-.5-.1-.8 0L72 67.4V14.3 14c0-.1-.1-.2-.1-.2 0-.1-.1-.1-.1-.2 0 0-.1 0-.1-.1 0 0-.1 0-.1-.1h-.1l-2.5-1c4.3-.8 8.6-1.2 13-1.2 40.6 0 73.6 33 73.6 73.6 0 4.4-.4 8.8-1.2 13.1l-.4-.2c-.5-.2-1 0-1.2.5-.2.5 0 1 .5 1.2l3.3 1.5c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.4 0-1-.5-1.2zM48.5 80.5l-.3.1c-.5.2-.7.8-.5 1.2.1.3.4.5.7.5V114l-19.8-8.9V91.3c.1 0 .2 0 .3-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.2-.5l-2.9 1.3V15.8l17.5 7.8 2.3 1v55.9zm.9-57.5l-3.2-1.4L30 14.3l19.4-8.7 19.4 8.7L49.4 23zm29.9 96l-19.8-8.9V75.9L79 84.6l.4.2V119zm21.7-9.1v.2L81.2 119V84.7l.4-.2 19.2-8.6.2.1v33.9zm34.4-20.5l-1.3-.6c-.5-.2-1 0-1.2.5-.2.5 0 1 .5 1.2l2 .9v13.9l-19.8 8.9V82.5l1.1.5c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-1.9-.8V50.8l2.3-1 17.5-7.8v47.4zm-20.8-57.6l19.4 8.7-16.2 7.2-3.2 1.4-6-2.7-13.4-6 19.4-8.6zM93.8 42l10.3 4.6 9.5 4.3v28.9c-.3 0-.7.2-.8.5-.2.5 0 1 .5 1.2l.3.1V114l-10.7-4.8V76.9l.4.2c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-1.2-.5v-.4-.2-.1c0-.1 0-.1-.1-.1 0 0 0-.1-.1-.1l-.1-.1s-.1 0-.1-.1h-.1-.1-.1L93.7 70V42zM80.3 65.7l19.4 8.7-16.2 7.2-3.2 1.4-3.3-1.3-16.2-7.2 19.5-8.8zM70.2 15.8v52.5l-12 5.4h-.1-.1-.1s-.1 0-.1.1l-.1.1s0 .1-.1.1c0 0 0 .1-.1.1v2.3l-2.8 1.2c-.5.2-.7.8-.5 1.2.2.3.5.6.9.6.1 0 .3 0 .4-.1l2-.9v32.4l-7.3 3.3V81.7l2-.9c.5-.2.7-.8.5-1.2s-.8-.7-1.2-.5l-1.2.5v-55l19.9-8.8z"/>
+        <path d="M106.7 78.6l3.3 1.5c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.3.4-.1 1 .4 1.2zM120 84.5l3.3 1.5c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.3.5-.1 1 .4 1.2zM140 93.5l3.3 1.5c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.3.4-.1 1 .4 1.2zM126.7 87.5L130 89c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.3.5-.1 1 .4 1.2zM146.7 96.5L150 98c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.3.4-.1.9.4 1.2z"/>
+    </svg>
+</svg>
+
+        
+        </div>
+    </figure>
+    <div class="flex flex-col gap-y-1.5 p-6 " >
+    
+        <h3
+    class="
+    font-semibold leading-none tracking-tight
+    
+        mx-auto
+    
+    "
+    class="mx-auto"
+  >
+    Integration &amp; Automation
+  </h3>
+
+        <p class="text-sm text-muted-foreground text-center" class="text-center">
+    Connect the systems you already use and eliminate repetitive manual work. I integrate APIs, databases, SaaS platforms, and internal systems to create more efficient and reliable workflows.
+</p>
+
+    
+</div>
+
+    
+    <div class="flex flex-wrap justify-start gap-1 mt-2 px-6">
+    
+        
+<div
+    class="
+    inline-flex items-center rounded-full
+    border px-2.5 py-0.5 text-xs font-semibold
+    transition-colors focus:outline-hidden
+    focus:ring-2 focus:ring-ring focus:ring-offset-2
+
+    border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80
+    
+
+    
+    "
+    
+>
+    APIs
+</div>
+
+    
+        
+<div
+    class="
+    inline-flex items-center rounded-full
+    border px-2.5 py-0.5 text-xs font-semibold
+    transition-colors focus:outline-hidden
+    focus:ring-2 focus:ring-ring focus:ring-offset-2
+
+    border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80
+    
+
+    
+    "
+    
+>
+    System Integration
+</div>
+
+    
+        
+<div
+    class="
+    inline-flex items-center rounded-full
+    border px-2.5 py-0.5 text-xs font-semibold
+    transition-colors focus:outline-hidden
+    focus:ring-2 focus:ring-ring focus:ring-offset-2
+
+    border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80
+    
+
+    
+    "
+    
+>
+    Workflow Automation
+</div>
+
+    
+        
+<div
+    class="
+    inline-flex items-center rounded-full
+    border px-2.5 py-0.5 text-xs font-semibold
+    transition-colors focus:outline-hidden
+    focus:ring-2 focus:ring-ring focus:ring-offset-2
+
+    border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80
+    
+
+    
+    "
+    
+>
+    Process Digitisation
+</div>
+
+    
+    </div>
+    
+    <div class="flex items-center p-6 pt-0 " >
+    
+        
+    
+</div>
+
+
+  </div>
+
+
+    
+        
+
+<div class="
+    rounded-xl border bg-card text-card-foreground shadow-sm
+    
+        w-96 border-none shadow-none!
+    
+    "
+    class="w-96 border-none shadow-none!"
+>
+    
+    <figure class="pt-6 pb-3 rounded-t-md w-full feature-icon-wrapper mx-auto flex items-center justify-center">
+        <div class="size-24">
+        
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#111" transform="matrix(.69 0 0 .69 15.5 15.5)" viewBox="0 0 164 164">
+        <path d="M56.3 145.6h22.6c.5 0 .9-.4.9-.9s-.4-.9-.9-.9H56.3c-.5 0-.9.4-.9.9s.4.9.9.9zM82.5 145.6h3.7c.5 0 .9-.4.9-.9s-.4-.9-.9-.9h-3.7c-.5 0-.9.4-.9.9s.4.9.9.9zM89.4 145.6h2.5c.5 0 .9-.4.9-.9s-.4-.9-.9-.9h-2.5c-.5 0-.9.4-.9.9s.4.9.9.9zM84.2 149.3c0 .5.4.9.9.9h22.6c.5 0 .9-.4.9-.9s-.4-.9-.9-.9H85.1c-.5-.1-.9.4-.9.9zM76.8 149.3c0 .5.4.9.9.9h3.7c.5 0 .9-.4.9-.9s-.4-.9-.9-.9h-3.7c-.5-.1-.9.4-.9.9zM74.6 148.3h-2.5c-.5 0-.9.4-.9.9s.4.9.9.9h2.5c.5 0 .9-.4.9-.9s-.4-.9-.9-.9zM44.9 82.1l-3.3 1.5c-.5.2-.7.8-.5 1.2.2.3.5.6.9.6.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.3-.5-.9-.7-1.3-.5zM24.9 91.1l-3.3 1.5c-.5.2-.7.8-.5 1.2.2.3.5.6.9.6.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.3-.5-.9-.8-1.3-.5zM38.2 85.1l-3.3 1.5c-.5.2-.7.8-.5 1.2.2.3.5.6.9.6.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.3-.5-.8-.7-1.3-.5zM18.2 94l-3.3 1.5c-.5.2-.7.8-.5 1.2.2.3.5.6.9.6.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.3-.5-.8-.7-1.3-.5zM4.5 101.2c-.2-.5-.8-.7-1.2-.5l-1.7.8c-.4.1-.6.5-.6.8s.2.7.6.9l1.7.8c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.4 0-.9-.3-1.1.2-.3.4-.8.2-1.2zM76.6 136.7c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.2.5 0 1 .5 1.2l3.2 1.5zM56.6 127.8c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.2.5 0 1 .5 1.2l3.2 1.5zM43.3 121.8c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.2.5 0 1 .5 1.2l3.2 1.5zM63.3 130.8c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.2.5 0 1 .5 1.2l3.2 1.5zM69.9 133.8c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5s0 1 .5 1.2l3.2 1.5zM36.6 118.8c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.2.5 0 1 .5 1.2l3.2 1.5zM26.6 114.4l3.3 1.5c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.3.4-.1 1 .4 1.2zM19.4 110.2c-.2.5 0 1 .5 1.2l3.3 1.5c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.3.5zM49.9 124.8c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.2.5 0 1 .5 1.2l3.2 1.5zM12.8 107.2c-.2.5 0 1 .5 1.2l3.3 1.5c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.6-.2-1.1 0-1.3.5z"/>
+        <path d="M156.7 103.7l-3.3 1.5s-.1 0-.1.1c-.3.1-.6.3-.7.7-3.6 12.1-10.3 22.7-19 31.3h-49v-.2c-.2-.5-.8-.7-1.2-.5l-1.3.6-1.3-.6c-.5-.2-1 0-1.2.5v.2h-49c-8.7-8.5-15.3-19.1-18.9-31.2-.1-.3-.4-.6-.7-.7l-.1-.1-3.3-1.5c-.5-.2-1 0-1.2.5-.2.5 0 1 .5 1.2l3.2 1.4c9.3 30.4 37.6 53.4 72.2 53.4 34.5 0 62.9-23 72.2-53.4l3.2-1.4c.5-.2.7-.8.5-1.2-.5-.6-1.1-.8-1.5-.6zM82 158.4c-18.7 0-36.3-7.3-49.6-19.4h99.2c-13.3 12.2-30.9 19.4-49.6 19.4z"/>
+        <path d="M113.7 124.9c.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.2-.5l-3.3 1.5c-.5.2-.7.8-.5 1.2.1.4.4.6.8.6zM120.4 121.9c.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2s-.8-.7-1.2-.5l-3.3 1.5c-.5.2-.7.8-.5 1.2.1.4.4.6.8.6zM127 118.9c.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.2-.5l-3.3 1.5c-.5.2-.7.8-.5 1.2.1.4.5.6.8.6zM133.7 115.9c.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.2-.5l-3.3 1.5c-.5.2-.7.8-.5 1.2.1.4.4.6.8.6zM146.2 109.4c.2.3.5.6.9.6.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.2-.5l-3.3 1.5c-.6.2-.8.8-.6 1.2zM139.5 112.4c.2.3.5.6.9.6.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.2-.5l-3.3 1.5c-.6.2-.8.7-.6 1.2zM87 136.8c.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.2-.5l-3.3 1.5c-.5.2-.7.8-.5 1.2.1.4.5.6.8.6zM93.7 133.8c.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.2-.5l-3.3 1.5c-.5.2-.7.8-.5 1.2.1.4.4.6.8.6zM100.4 130.9c.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.2-.5l-3.3 1.5c-.5.2-.7.8-.5 1.2.1.3.4.6.8.6zM107 127.9c.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.2-.5l-3.3 1.5c-.5.2-.7.8-.5 1.2.1.4.5.6.8.6zM162.4 101.5l-1.7-.8c-.5-.2-1 0-1.2.5-.2.4 0 .9.3 1.1-.4.3-.5.7-.3 1.1.2.3.5.6.9.6.1 0 .3 0 .4-.1l1.7-.8c.3-.2.6-.5.6-.9s-.3-.6-.7-.7zM157.4 99.2l-1.2-.5c.8-4.5 1.3-9.2 1.3-13.9 0-41.6-33.9-75.5-75.5-75.5-5.4 0-10.8.6-16 1.7L49.8 3.8c-.2-.1-.5-.1-.8 0l-21.7 9.7h-.1-.1-.1s-.1 0-.1.1l-.1.1s0 .1-.1.1c0 0 0 .1-.1.1v19.3C13.7 47.4 6.5 65.6 6.5 84.8c0 4.7.4 9.5 1.3 14-.2.3-.2.6-.1.9.2.3.5.6.9.6.1 0 .3 0 .4-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.3-.5l-2 .9c-.8-4.3-1.2-8.7-1.2-13.1 0-18 6.5-35.2 18.4-48.7v69.7c0 .4.2.7.6.9l21.7 9.7c.1 0 .2.1.3.1h.1c.1 0 .2 0 .3-.1h.1l9.6-4.3 20.5 9.2c.1 0 .2.1.3.1.1 0 .2 0 .3-.1l21.7-9.7c.1-.1.3-.2.4-.3l11.5 5.1h.1c.1 0 .2 0 .3.1h.1c.1 0 .2 0 .3-.1l21.7-9.7c.3-.2.6-.5.6-.9V92c.3-.1.5-.2.7-.5.2-.5 0-1-.5-1.2l-.2-.1V40.5v-.2-.1c0-.1 0-.1-.1-.1 0 0 0-.1-.1-.1l-.1-.1s-.1 0-.1-.1h-.1-.1-.1L115 30c-.2-.1-.5-.1-.8 0l-21.7 9.7h-.1l-.1.1-.1.1-.1.1v.1c0 .1-.1.1-.1.2V69.1L80.7 64c-.2-.1-.5-.1-.8 0L72 67.4V14.3 14c0-.1-.1-.2-.1-.2 0-.1-.1-.1-.1-.2 0 0-.1 0-.1-.1 0 0-.1 0-.1-.1h-.1l-2.5-1c4.3-.8 8.6-1.2 13-1.2 40.6 0 73.6 33 73.6 73.6 0 4.4-.4 8.8-1.2 13.1l-.4-.2c-.5-.2-1 0-1.2.5-.2.5 0 1 .5 1.2l3.3 1.5c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.4 0-1-.5-1.2zM48.5 80.5l-.3.1c-.5.2-.7.8-.5 1.2.1.3.4.5.7.5V114l-19.8-8.9V91.3c.1 0 .2 0 .3-.1l3.3-1.5c.5-.2.7-.8.5-1.2-.2-.5-.8-.7-1.2-.5l-2.9 1.3V15.8l17.5 7.8 2.3 1v55.9zm.9-57.5l-3.2-1.4L30 14.3l19.4-8.7 19.4 8.7L49.4 23zm29.9 96l-19.8-8.9V75.9L79 84.6l.4.2V119zm21.7-9.1v.2L81.2 119V84.7l.4-.2 19.2-8.6.2.1v33.9zm34.4-20.5l-1.3-.6c-.5-.2-1 0-1.2.5-.2.5 0 1 .5 1.2l2 .9v13.9l-19.8 8.9V82.5l1.1.5c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-1.9-.8V50.8l2.3-1 17.5-7.8v47.4zm-20.8-57.6l19.4 8.7-16.2 7.2-3.2 1.4-6-2.7-13.4-6 19.4-8.6zM93.8 42l10.3 4.6 9.5 4.3v28.9c-.3 0-.7.2-.8.5-.2.5 0 1 .5 1.2l.3.1V114l-10.7-4.8V76.9l.4.2c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-1.2-.5v-.4-.2-.1c0-.1 0-.1-.1-.1 0 0 0-.1-.1-.1l-.1-.1s-.1 0-.1-.1h-.1-.1-.1L93.7 70V42zM80.3 65.7l19.4 8.7-16.2 7.2-3.2 1.4-3.3-1.3-16.2-7.2 19.5-8.8zM70.2 15.8v52.5l-12 5.4h-.1-.1-.1s-.1 0-.1.1l-.1.1s0 .1-.1.1c0 0 0 .1-.1.1v2.3l-2.8 1.2c-.5.2-.7.8-.5 1.2.2.3.5.6.9.6.1 0 .3 0 .4-.1l2-.9v32.4l-7.3 3.3V81.7l2-.9c.5-.2.7-.8.5-1.2s-.8-.7-1.2-.5l-1.2.5v-55l19.9-8.8z"/>
+        <path d="M106.7 78.6l3.3 1.5c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.3.4-.1 1 .4 1.2zM120 84.5l3.3 1.5c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.3.5-.1 1 .4 1.2zM140 93.5l3.3 1.5c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.3.4-.1 1 .4 1.2zM126.7 87.5L130 89c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.3.5-.1 1 .4 1.2zM146.7 96.5L150 98c.1.1.3.1.4.1.4 0 .7-.2.9-.6.2-.5 0-1-.5-1.2l-3.3-1.5c-.5-.2-1 0-1.2.5-.3.4-.1.9.4 1.2z"/>
+    </svg>
+</svg>
+
+        
+        </div>
+    </figure>
+    <div class="flex flex-col gap-y-1.5 p-6 " >
+    
+        <h3
+    class="
+    font-semibold leading-none tracking-tight
+    
+        mx-auto
+    
+    "
+    class="mx-auto"
+  >
+    Data &amp; AI
+  </h3>
+
+        <p class="text-sm text-muted-foreground text-center" class="text-center">
+    Turn business data into useful information and practical automation. I build data pipelines, dashboards, analytics solutions, and AI-powered features that help businesses make better decisions and automate valuable workflows.
+</p>
+
+    
+</div>
+
+    
+    <div class="flex flex-wrap justify-start gap-1 mt-2 px-6">
+    
+        
+<div
+    class="
+    inline-flex items-center rounded-full
+    border px-2.5 py-0.5 text-xs font-semibold
+    transition-colors focus:outline-hidden
+    focus:ring-2 focus:ring-ring focus:ring-offset-2
+
+    border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80
+    
+
+    
+    "
+    
+>
+    Analytics
+</div>
+
+    
+        
+<div
+    class="
+    inline-flex items-center rounded-full
+    border px-2.5 py-0.5 text-xs font-semibold
+    transition-colors focus:outline-hidden
+    focus:ring-2 focus:ring-ring focus:ring-offset-2
+
+    border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80
+    
+
+    
+    "
+    
+>
+    Data Integration
+</div>
+
+    
+        
+<div
+    class="
+    inline-flex items-center rounded-full
+    border px-2.5 py-0.5 text-xs font-semibold
+    transition-colors focus:outline-hidden
+    focus:ring-2 focus:ring-ring focus:ring-offset-2
+
+    border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80
+    
+
+    
+    "
+    
+>
+    Reporting
+</div>
+
+    
+        
+<div
+    class="
+    inline-flex items-center rounded-full
+    border px-2.5 py-0.5 text-xs font-semibold
+    transition-colors focus:outline-hidden
+    focus:ring-2 focus:ring-ring focus:ring-offset-2
+
+    border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80
+    
+
+    
+    "
+    
+>
+    Machine Learning
+</div>
+
+    
+        
+<div
+    class="
+    inline-flex items-center rounded-full
+    border px-2.5 py-0.5 text-xs font-semibold
+    transition-colors focus:outline-hidden
+    focus:ring-2 focus:ring-ring focus:ring-offset-2
+
+    border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80
+    
+
+    
+    "
+    
+>
+    Generative AI
+</div>
+
+    
+        
+<div
+    class="
+    inline-flex items-center rounded-full
+    border px-2.5 py-0.5 text-xs font-semibold
+    transition-colors focus:outline-hidden
+    focus:ring-2 focus:ring-ring focus:ring-offset-2
+
+    border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80
+    
+
+    
+    "
+    
+>
+    Dashboards
+</div>
+
+    
+    </div>
+    
+    <div class="flex items-center p-6 pt-0 " >
+    
+        
+    
+</div>
+
+
+  </div>
+
+
+    
+        
+
+<div class="
+    rounded-xl border bg-card text-card-foreground shadow-sm
+    
+        w-96 border-none shadow-none!
+    
+    "
+    class="w-96 border-none shadow-none!"
+>
+    
+    <figure class="pt-6 pb-3 rounded-t-md w-full feature-icon-wrapper mx-auto flex items-center justify-center">
+        <div class="size-24">
+        
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#111" transform="matrix(.69 0 0 .69 15.5 15.5)" viewBox="0 0 164 164">
+        <path d="M36.4 51.7c0-3.6-2.9-6.5-6.5-6.5s-6.5 2.9-6.5 6.5 2.9 6.5 6.5 6.5 6.5-2.9 6.5-6.5zm-5.6 4.5v-3.6h3.6c-.3 1.8-1.8 3.2-3.6 3.6zm3.6-5.5h-3.6v-3.6c1.8.4 3.3 1.8 3.6 3.6zm-9.2 1c0-2.2 1.6-4.1 3.7-4.5v9c-2.1-.4-3.7-2.3-3.7-4.5zM56.9 142.5c0 .5.4.9.9.9h22.8c.5 0 .9-.4.9-.9s-.4-.9-.9-.9H57.8c-.5 0-.9.4-.9.9zM84.3 143.4h3.8c.5 0 .9-.4.9-.9s-.4-.9-.9-.9h-3.8c-.5 0-.9.4-.9.9s.4.9.9.9zM91.3 143.4h2.5c.5 0 .9-.4.9-.9s-.4-.9-.9-.9h-2.5c-.5 0-.9.4-.9.9-.1.5.4.9.9.9zM86 147.1c0 .5.4.9.9.9h22.8c.5 0 .9-.4.9-.9s-.4-.9-.9-.9H86.9c-.5 0-.9.4-.9.9zM78.5 147.1c0 .5.4.9.9.9h3.8c.5 0 .9-.4.9-.9s-.4-.9-.9-.9h-3.8c-.4 0-.9.4-.9.9zM76.3 146.2h-2.5c-.5 0-.9.4-.9.9s.4.9.9.9h2.5c.5 0 .9-.4.9-.9s-.4-.9-.9-.9zM78.3 32.2c-3.6 0-6.5 2.9-6.5 6.5s2.9 6.5 6.5 6.5 6.5-2.9 6.5-6.5c-.1-3.6-3-6.5-6.5-6.5zm4.4 5.5h-3.5v-3.5c1.8.4 3.2 1.7 3.5 3.5zm-9 1c0-2.2 1.6-4 3.6-4.5v9c-2-.5-3.6-2.3-3.6-4.5zm5.5 4.4v-3.5h3.5c-.3 1.8-1.7 3.2-3.5 3.5z"/>
+        <path d="M162.1 72.2h-2.7c-1.6-12.8-6.5-25-14.2-35.4v-8.6c0-.5-.4-.9-.9-.9h-7.4c-14.3-13.8-33.1-21.5-53-21.5-25.8 0-49.6 12.8-63.7 34.2h-.8c-.5 0-.9.4-.9.9v1.9C8.7 43.3 1 51.3 1 61.1 1 66.8 3.7 72 7.8 75.3c-.2 2.2-.3 4.5-.3 6.7 0 13.8 3.7 27.4 10.8 39.2v8.4c0 .5.4.9.9.9H25c14.6 17.6 35.9 27.7 58.8 27.7 19.9 0 38.7-7.6 53-21.4 6.1-.3 8.4.7 8.4-.9v-8.7c6.6-8.9 11.2-19.3 13.3-30.1h3.5c.5 0 .9-.4.9-.9v-23c.1-.5-.3-1-.8-1zm-4.6 0h-12.3V40.1c6.5 9.6 10.8 20.6 12.3 32.1zM18.4 64.4c-3.4-1-3.4-5.7 0-6.7v6.7zm1.8 14.1V56.7 42h38.4v38.4H20.2v-1.9zM2.9 61.1c0-8.7 6.9-15.9 15.5-16.4v11.1c-5.9 1-5.9 9.5 0 10.6v11.1C9.7 77 2.9 69.8 2.9 61.1zM9.4 82c0-1.8.1-3.6.2-5.4 2.6 1.6 5.5 2.6 8.7 2.7v1.9c0 .5.4.9.9.9h40.2c.5 0 .9-.4.9-.9V41c0-.5-.4-.9-.9-.9h-37C36.3 19.7 59.1 7.6 83.8 7.6c18.8 0 36.5 6.9 50.3 19.6H65.6c-.5 0-.9.4-.9.9v61.1H19.3c-.5 0-.9.5-.9.9v27.2c-5.9-10.7-9-22.9-9-35.3zm74.3 46l-29.9-18.1 29.9-18.1V128zM20.2 91.8l29.9 18.1L20.2 128V91.8zm31.7 17L22.7 91.1h58.5l-29.3 17.7zm0 2.2l29.3 17.7H22.7L51.9 111zm12.8 19.6v4.4H31.5c-1.4-1.4-2.8-2.8-4.1-4.4h37.3zm19.1 25.8c-18.8 0-36.6-7-50.3-19.6H134c-13.7 12.6-31.5 19.6-50.2 19.6zm-17.2-21.5v-4.4h18c.5 0 .9-.5.9-.9V90.2c0-.5-.4-.9-.9-.9h-18V29.1h76.7v43.1h-16.9c-.5 0-.9.4-.9.9V96c0 .5.4.9.9.9h16.9v37.9c-14.5.1-63 .1-76.7.1zm78.6-11V97.1h11.4c-2 9.5-5.9 18.7-11.4 26.8zm15.9-28.7h-33.8V74.1h33.8v21.1z"/>
+        <path d="M144.2 86.2c3 0 5.4-2.4 5.4-5.4 0-3-2.4-5.4-5.4-5.4s-5.4 2.4-5.4 5.4c.1 3 2.5 5.4 5.4 5.4zm1-2v-2.4h2.4c-.4 1.2-1.3 2.1-2.4 2.4zm2.4-4.3h-2.4v-2.4c1.1.4 2 1.3 2.4 2.4zm-4.3-2.4v6.6c-1.5-.4-2.5-1.8-2.5-3.3 0-1.5 1-2.9 2.5-3.3zM134.9 89.6h18.6c.5 0 .9-.4.9-.9s-.4-.9-.9-.9h-18.6c-.5 0-.9.4-.9.9s.4.9.9.9zM130.4 92.5h27.7c.5 0 .9-.4.9-.9s-.4-.9-.9-.9h-27.7c-.5 0-.9.4-.9.9-.1.5.3.9.9.9zM118.5 33.4H88c-.5 0-.9.4-.9.9s.4.9.9.9h30.5c.5 0 .9-.4.9-.9s-.4-.9-.9-.9zM111 37.5H88c-.5 0-.9.4-.9.9s.4.9.9.9h23c.5 0 .9-.4.9-.9s-.4-.9-.9-.9zM101.9 40.5H88c-.5 0-.9.4-.9.9s.4.9.9.9h13.9c.5 0 .9-.4.9-.9s-.4-.9-.9-.9zM55.7 72.1H28c-.5 0-.9.4-.9.9s.4.9.9.9h27.7c.5 0 .9-.4.9-.9.1-.5-.3-.9-.9-.9z"/>
+    </svg>
+</svg>
+
+        
+        </div>
+    </figure>
+    <div class="flex flex-col gap-y-1.5 p-6 " >
+    
+        <h3
+    class="
+    font-semibold leading-none tracking-tight
+    
+        mx-auto
+    
+    "
+    class="mx-auto"
+  >
+    Cloud &amp; Application Modernisation
+  </h3>
+
+        <p class="text-sm text-muted-foreground text-center" class="text-center">
+    Modernise existing applications and infrastructure for greater reliability, scalability, and maintainability. From cloud migration to architecture improvements and deployment automation, I help extend the life and value of your technology.
+</p>
+
+    
+</div>
+
+    
+    <div class="flex flex-wrap justify-start gap-1 mt-2 px-6">
+    
+        
+<div
+    class="
+    inline-flex items-center rounded-full
+    border px-2.5 py-0.5 text-xs font-semibold
+    transition-colors focus:outline-hidden
+    focus:ring-2 focus:ring-ring focus:ring-offset-2
+
+    border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80
+    
+
+    
+    "
+    
+>
+    Application Modernisation
+</div>
+
+    
+        
+<div
+    class="
+    inline-flex items-center rounded-full
+    border px-2.5 py-0.5 text-xs font-semibold
+    transition-colors focus:outline-hidden
+    focus:ring-2 focus:ring-ring focus:ring-offset-2
+
+    border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80
+    
+
+    
+    "
+    
+>
+    Architecture
+</div>
+
+    
+        
+<div
+    class="
+    inline-flex items-center rounded-full
+    border px-2.5 py-0.5 text-xs font-semibold
+    transition-colors focus:outline-hidden
+    focus:ring-2 focus:ring-ring focus:ring-offset-2
+
+    border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80
+    
+
+    
+    "
+    
+>
+    Cloud Migration
+</div>
+
+    
+        
+<div
+    class="
+    inline-flex items-center rounded-full
+    border px-2.5 py-0.5 text-xs font-semibold
+    transition-colors focus:outline-hidden
+    focus:ring-2 focus:ring-ring focus:ring-offset-2
+
+    border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80
+    
+
+    
+    "
+    
+>
+    DevOps
+</div>
+
+    
+        
+<div
+    class="
+    inline-flex items-center rounded-full
+    border px-2.5 py-0.5 text-xs font-semibold
+    transition-colors focus:outline-hidden
+    focus:ring-2 focus:ring-ring focus:ring-offset-2
+
+    border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80
+    
+
+    
+    "
+    
+>
+    Deployment
+</div>
+
+    
+        
+<div
+    class="
+    inline-flex items-center rounded-full
+    border px-2.5 py-0.5 text-xs font-semibold
+    transition-colors focus:outline-hidden
+    focus:ring-2 focus:ring-ring focus:ring-offset-2
+
+    border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80
+    
+
+    
+    "
+    
+>
+    Performance
+</div>
+
+    
+    </div>
+    
+    <div class="flex items-center p-6 pt-0 " >
+    
+        
+    
+</div>
+
+
+  </div>
+
+
+    
+        
+
+<div class="
+    rounded-xl border bg-card text-card-foreground shadow-sm
+    
+        w-96 border-none shadow-none!
+    
+    "
+    class="w-96 border-none shadow-none!"
+>
+    
+    <figure class="pt-6 pb-3 rounded-t-md w-full feature-icon-wrapper mx-auto flex items-center justify-center">
+        <div class="size-24">
+        
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#111" transform="matrix(.69 0 0 .69 15.5 15.5)" viewBox="0 0 164 164">
+        <path d="M55.7 148h23.1c.5 0 1-.4 1-1 0-.5-.4-1-1-1H55.7c-.5 0-1 .4-1 1s.5 1 1 1zM82.5 148h3.8c.5 0 1-.4 1-1 0-.5-.4-1-1-1h-3.8c-.5 0-1 .4-1 1 .1.6.5 1 1 1zM89.6 148h2.5c.5 0 1-.4 1-1 0-.5-.4-1-1-1h-2.5c-.5 0-1 .4-1 1 .1.6.5 1 1 1zM84.2 151.7c0 .5.4 1 1 1h23.1c.5 0 1-.4 1-1 0-.5-.4-1-1-1H85.2c-.6 0-1 .5-1 1zM76.7 151.7c0 .5.4 1 1 1h3.8c.5 0 1-.4 1-1 0-.5-.4-1-1-1h-3.8c-.6 0-1 .5-1 1zM74.4 150.7h-2.5c-.5 0-1 .4-1 1 0 .5.4 1 1 1h2.5c.5 0 1-.4 1-1-.1-.5-.5-1-1-1z"/>
+        <path d="M151.6 119.5c5.2-10.6 7.8-22 7.8-33.9 0-11.9-2.6-23.3-7.8-33.8V30.9c0-7.3-5.9-13.2-13.2-13.2-.5 0-1 .4-1 1v13c-10.3-10.6-23.3-18-37.8-21.4-3.5-5-9-8.5-15.2-9.2-6.2-.7-12.2 1.2-16.8 5.4-1.3 1.1-2.4 2.4-3.3 3.8C49.9 13.7 36.9 21 26.5 31.7v-13c0-.5-.4-1-1-1-7.3 0-13.2 5.9-13.2 13.2v20.9c-5.2 10.6-7.8 22-7.8 33.8 0 11.9 2.6 23.3 7.8 33.9v8.6c0 7.3 5.9 13.2 13.2 13.2h2.6C42.7 155.3 61.8 163 82 163c20.2 0 39.3-7.7 53.8-21.8h2.6c7.3 0 13.2-5.9 13.2-13.2v-8.5zm5.9-33.9c0 10.2-2 20-5.9 29.2V56.4c3.9 9.2 5.9 19 5.9 29.2zm-7.8-54.7v90.3c-2.2-3.5-5.9-6-10.3-6.3V19.7c5.7.5 10.3 5.3 10.3 11.2zM137 34h-36.8c2.6-4.1 3.7-8.9 3.2-13.8-.3-2.7-1.1-5.2-2.3-7.5 13.7 3.5 26.1 10.8 35.9 21.3zM68.9 7.9c4.2-3.8 9.7-5.5 15.3-4.9 9 1 16.3 8.3 17.3 17.3.6 5.9-1.3 11.7-5.4 15.9-4.3 4.4-6.8 10-7 15.9h-3.3V33h2c2.1 0 3.9-1.7 3.9-3.9 0-2.1-1.7-3.9-3.9-3.9-2.1 0-3.9 1.7-3.9 3.9v2h-3.6v-2c0-2.1-1.7-3.9-3.9-3.9-2.1 0-3.9 1.7-3.9 3.9 0 2.1 1.7 3.9 3.9 3.9h2v19h-3.3c-.3-6-2.7-11.6-6.8-15.6-3.7-3.7-5.8-8.7-5.8-13.9-.1-5.5 2.3-10.9 6.4-14.6zm4.8 110.9v-8.3h16.6v16.6H73.7v-8.3zm8.3-24l-7.9-7.9L82 79l7.9 7.9-7.9 7.9zm-9.3-30.5c-.5 0-1-.4-1-1v-1.2h20.5v1.2c0 .5-.4 1-1 1H72.7zm19.6-4.1H71.7V58h20.5v2.2zm0-4.1H71.7v-1.2c0-.5.4-1 1-1h18.6c.5 0 1 .4 1 1v1.2zm-14-25h-2c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2v2zm5.5 21h-3.6V33h3.6v19.1zm1.9-21v-2c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2h-2zM62.9 12.6c-1.6 3-2.4 6.4-2.4 9.9 0 4.1 1.2 8 3.3 11.4H27c9.8-10.4 22.1-17.7 35.9-21.3zm-38.3 7.1v95.2c-4.4.3-8.2 2.8-10.3 6.3V30.9c0-5.9 4.6-10.7 10.3-11.2zM6.5 85.6c0-10.2 2-20 5.9-29.2v58.5c-3.9-9.3-5.9-19.1-5.9-29.3zM82 161.1c-19 0-37-7-51-19.8h102c-14 12.7-32 19.8-51 19.8zm56.4-21.8H25.6c-6.2 0-11.3-5.1-11.3-11.3 0-6.2 5.1-11.2 11.3-11.2.5 0 1-.4 1-1V35.9h38.6c.5.7 1.1 1.3 1.7 1.9 3.7 3.6 5.9 8.8 6.2 14.3h-.3c-1.6 0-2.9 1.3-2.9 2.9v8.4c0 1.6 1.3 2.9 2.9 2.9H81v11L72.3 86H61.9c-.5-5.2-4.9-9.3-10.2-9.3-5.6 0-10.2 4.6-10.2 10.2s4.6 10.2 10.2 10.2c5.3 0 9.7-4.1 10.2-9.3h10.5l8.7 8.7v12h-8.3c-.5 0-1 .4-1 1v8.3h-9.9c-.5-5.2-4.9-9.3-10.2-9.3-5.6 0-10.2 4.6-10.2 10.2S46.1 129 51.7 129c5.3 0 9.7-4.1 10.2-9.3h9.9v8.3c0 .5.4 1 1 1h18.5c.5 0 1-.4 1-1v-18.5c0-.5-.4-1-1-1H83v-12l8.7-8.7h10.4v8.3c0 .5.4 1 1 1h8.3v11.5c-5.2.5-9.3 4.9-9.3 10.2 0 5.6 4.6 10.2 10.2 10.2s10.2-4.6 10.2-10.2c0-5.3-4.1-9.7-9.3-10.2V97.1h8.3c.5 0 1-.4 1-1V77.6c0-.5-.4-1-1-1H103c-.5 0-1 .4-1 1v8.3H91.7L83 77.2v-11h8.3c1.6 0 2.9-1.3 2.9-2.9v-8.4c0-1.6-1.3-2.9-2.9-2.9H91c.3-5.3 2.5-10.4 6.5-14.5.5-.5 1-1.1 1.4-1.6h38.6v79.9c0 .5.4 1 1 1 6.2 0 11.2 5 11.3 11.2-.1 6.3-5.2 11.3-11.4 11.3zM60 86.9c0 4.6-3.7 8.3-8.3 8.3-4.6 0-8.3-3.7-8.3-8.3 0-4.6 3.7-8.3 8.3-8.3 4.6 0 8.3 3.7 8.3 8.3zm0 31.9c0 4.6-3.7 8.3-8.3 8.3-4.6 0-8.3-3.7-8.3-8.3 0-4.6 3.7-8.3 8.3-8.3 4.6 0 8.3 3.7 8.3 8.3zm52.3-8.3c4.6 0 8.3 3.7 8.3 8.3 0 4.6-3.7 8.3-8.3 8.3-4.6 0-8.3-3.7-8.3-8.3 0-4.6 3.7-8.3 8.3-8.3zM104 95.2V78.6h16.6v16.6H104z"/>
+    </svg>
+</svg>
+
+        
+        </div>
+    </figure>
+    <div class="flex flex-col gap-y-1.5 p-6 " >
+    
+        <h3
+    class="
+    font-semibold leading-none tracking-tight
+    
+        mx-auto
+    
+    "
+    class="mx-auto"
+  >
+    Custom Software
+  </h3>
+
+        <p class="text-sm text-muted-foreground text-center" class="text-center">
+    Build software around the way your business actually works. I design and develop tailored applications, internal tools, customer portals, and digital platforms that solve specific business problems without the constraints of off-the-shelf software.
+</p>
+
+    
+</div>
+
+    
+    <div class="flex flex-wrap justify-start gap-1 mt-2 px-6">
+    
+        
+<div
+    class="
+    inline-flex items-center rounded-full
+    border px-2.5 py-0.5 text-xs font-semibold
+    transition-colors focus:outline-hidden
+    focus:ring-2 focus:ring-ring focus:ring-offset-2
+
+    border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80
+    
+
+    
+    "
+    
+>
+    Custom Web Apps
+</div>
+
+    
+        
+<div
+    class="
+    inline-flex items-center rounded-full
+    border px-2.5 py-0.5 text-xs font-semibold
+    transition-colors focus:outline-hidden
+    focus:ring-2 focus:ring-ring focus:ring-offset-2
+
+    border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80
+    
+
+    
+    "
+    
+>
+    Portals
+</div>
+
+    
+    </div>
+    
+    <div class="flex items-center p-6 pt-0 " >
+    
+        
+    
+</div>
+
+
+  </div>
+
+
+    
+    
+</div>
+
+</section>
+
+   	
+  
+   	
+        <section id="about" 
+    class=""
+    id="about" >
+  
+    <h2 class="text-center mb-4 text-2xl">How I Work</h2>
+    <div class="mx-auto text-center max-w-148 pb-6 font-light leading-relaxed "
+     >
+    Whether you&#x27;re starting from an idea, modernising an existing system, or looking to improve an established technology ecosystem, I work with you to turn business requirements into practical, measurable outcomes.
+</div>
+
+    <div class="mx-auto text-center max-w-148 pb-6 font-light leading-relaxed "
+     >
+    
+        <div class="flex flex-col items-center gap-6">
+            <p class="leading-normal">I combine software engineering, data, AI, automation, and cloud technologies to solve real business problems—not simply to introduce new technology. My focus is on building solutions that are useful, maintainable, and designed to grow with your business.
+
+From requirements and architecture through development, integration, deployment, and optimisation, you work directly with me throughout the process.</p>
+            
+        </div>
+    
+</div>
+
+
+</section>
+   	
+  
+   	
+        <section id="team" 
+    class="mx-auto"
+    id="team" class="mx-auto" >
+  
+    <h2 class="text-center mb-4 text-2xl">About Me</h2>
+    <div class="grid grid-cols-1 gap-y-6 justify-center justify-items-center ">
+    
+        
+        
+
+<div class="
+    rounded-xl border bg-card text-card-foreground shadow-sm
+    
+        w-96 border-none shadow-none!
+    
+    "
+    class="w-96 border-none shadow-none!"
+>
+    
+    <figure class="pt-6 pb-3 rounded-t-md w-full feature-icon-wrapper mx-auto flex items-center justify-center">
+        <img
+            src="/static/images/team/alexandry-augustin.jpg"
+            class="rounded-full size-44 object-cover"
+            alt="Profile photo" />
+    </figure>
+    <div class="flex flex-col gap-y-1.5 p-6 " >
+    
+        <h3
+    class="
+    font-semibold leading-none tracking-tight
+    
+        mx-auto font-light
+    
+    "
+    class="mx-auto font-light"
+  >
+    Director &amp; Software Engineer
+  </h3>
+
+        <h3
+    class="
+    font-semibold leading-none tracking-tight
+    
+        mx-auto text-xl font-light
+    
+    "
+    class="mx-auto text-xl font-light"
+  >
+    Alexandry Augustin, PhD
+  </h3>
+
+        <p class="text-sm text-muted-foreground " >
+    
+            <p class="text-center font-light">I&#x27;m a software engineer with experience delivering end-to-end solutions across automation, predictive AI, data engineering, and actionable data visualisation. I work directly with clients from initial requirements and architecture through development, integration, deployment, and ongoing improvement.</p>
+        
+</p>
+
+    
+</div>
+
+    
+    <div class="flex items-center p-6 pt-0 " >
+    
+        
+        <div class="w-full flex justify-end mt-3">
+            
+
+<a
+    
+        href="None"
+    
+    class="
+    inline-flex
+    items-center
+    justify-center
+    gap-2
+    whitespace-nowrap
+    rounded-md
+    text-sm
+    font-medium
+    transition-colors
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    
+    disabled:opacity-50
+    [&_svg]:pointer-events-none
+    [&_svg]:size-4
+    [&_svg]:shrink-0
+
+    bg-primary text-primary-foreground shadow-sm hover:bg-primary/90
+    
+
+    h-9 px-4 py-2
+    
+
+    
+    inline-flex items-center gap-1.5
+    
+    "
+    
+    href="None" class="inline-flex items-center gap-1.5" target="_blank" rel="noopener noreferrer"
+>
+    
+    <span>Website</span>
+    <i data-lucide="external-link" class="h-4 w-4"></i>
+
+</a>
+
+        </div>
+        
+        
+    
+</div>
+
+
+  </div>
+
+
+        
+    
+</div>
+
+</section>
+   	
+  
+   	
+        
+
+<section id="clients" 
+    class="mx-auto"
+    id="clients" class="mx-auto" >
+  
+    <h2 class="text-center mb-4 text-2xl">Organisations I've Worked With</h2>
+    <div class="mx-auto text-center max-w-148 pb-6 font-light leading-relaxed "
+     >
+    
+        My experience spans leading organisations across healthcare, higher education, research, and technology.
+    
+</div>
+
+    <div class="grid grid-cols-1 gap-y-6 justify-center justify-items-center lg:grid-cols-2 lg:gap-x-24">
+    
+        
+            <div class="
+    rounded-xl border bg-card text-card-foreground shadow-sm
+    
+        w-96 border-none shadow-none!
+    
+    "
+    class="w-96 border-none shadow-none!"
+>
+    
+    <figure class="pt-6 pb-3 rounded-t-md w-full feature-icon-wrapper mx-auto flex items-center justify-center">
+        
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   width="320.59375"
+   height="71.160835"
+   id="svg3543"
+   sodipodi:docname="University_of_Southampton_Logo (copy).svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="2.2863827"
+     inkscape:cx="194.4119"
+     inkscape:cy="73.259827"
+     inkscape:window-width="1280"
+     inkscape:window-height="659"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3543" />
+  <defs
+     id="defs3545" />
+  <g
+     transform="matrix(1.3359287,0,0,1.3359287,94.903165,8.9219604)"
+     fill="#ffffff"
+     id="g3"
+     style="fill:#005eb8;fill-opacity:1">
+    <path
+       d="M 9.66,3.86 H 20.41 L 27,26.19 h 0.1 L 31.62,3.86 h 8.12 l -6.83,32.2 H 22.21 L 15.47,13.78 H 15.38 L 10.91,36.06 H 2.79 Z"
+       id="path1"
+       style="fill:#005eb8;fill-opacity:1" />
+    <path
+       d="m 42.91,3.86 h 8.63 L 49,16.18 H 59.2 L 61.74,3.86 h 8.63 l -6.69,32.2 H 55 L 57.86,22.27 H 47.71 l -2.86,13.79 h -8.62 z"
+       id="path2"
+       style="fill:#005eb8;fill-opacity:1" />
+    <path
+       d="M 93.06,11.15 A 16.18,16.18 0 0 0 86,9.67 c -3.41,0 -6.18,0.51 -6.18,3.09 0,4.57 12.5,2.86 12.5,12.64 0,8.9 -8.26,11.21 -15.73,11.21 a 36,36 0 0 1 -10,-1.66 l 2,-6.55 c 1.71,1.11 5.12,1.85 7.93,1.85 2.81,0 6.87,-0.51 6.87,-3.83 0,-5.17 -12.5,-3.23 -12.5,-12.32 0,-8.3 7.29,-10.8 14.35,-10.8 4,0 7.7,0.42 9.87,1.43 z"
+       id="path3"
+       style="fill:#005eb8;fill-opacity:1" />
+  </g>
+</svg>
+
+        
+    </figure>
+    
+    <div class="flex flex-col gap-y-1.5 p-6 " >
+    
+        <h3
+    class="
+    font-semibold leading-none tracking-tight
+    
+        mx-auto
+    
+    "
+    class="mx-auto"
+  >
+    The National Health Service
+  </h3>
+
+        <p class="text-sm text-muted-foreground text-center" class="text-center">
+    Experience delivering technology and data-driven solutions within the UK&#x27;s publicly funded healthcare system.
+</p>
+
+    
+</div>
+
+    <div class="flex items-center p-6 pt-0 " >
+    
+        
+        <div class="w-full flex justify-end mt-3">
+            
+
+<a
+    
+        href="None"
+    
+    class="
+    inline-flex
+    items-center
+    justify-center
+    gap-2
+    whitespace-nowrap
+    rounded-md
+    text-sm
+    font-medium
+    transition-colors
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    
+    disabled:opacity-50
+    [&_svg]:pointer-events-none
+    [&_svg]:size-4
+    [&_svg]:shrink-0
+
+    bg-primary text-primary-foreground shadow-sm hover:bg-primary/90
+    
+
+    h-9 px-4 py-2
+    
+
+    
+    inline-flex items-center gap-1.5
+    
+    "
+    
+    href="None" class="inline-flex items-center gap-1.5" target="_blank" rel="noopener noreferrer"
+>
+    
+    <span>Website</span>
+    <i data-lucide="external-link" class="h-4 w-4"></i>
+
+</a>
+
+        </div>
+        
+    
+</div>
+
+
+  </div>
+
+
+        
+            <div class="
+    rounded-xl border bg-card text-card-foreground shadow-sm
+    
+        w-96 border-none shadow-none!
+    
+    "
+    class="w-96 border-none shadow-none!"
+>
+    
+    <figure class="pt-6 pb-3 rounded-t-md w-full feature-icon-wrapper mx-auto flex items-center justify-center">
+        
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="320.59375"
+   height="71.160835"
+   id="svg3543">
+  <defs
+     id="defs3545" />
+  <g
+     transform="translate(-105.41741,-491.06748)"
+     id="layer1">
+    <path
+       d="m 315.63616,492.07206 c -2.32469,0 -5.0625,1.40651 -5.0625,4.34375 0,2.00812 1.2166,3.26297 3.59375,4.4375 2.34905,1.20075 4.125,1.6472 4.125,4 0,1.197 -0.69498,3.28125 -3.34375,3.28125 -2.61692,0 -3.92423,-2.23541 -4.4375,-4 l 0.0625,3.65625 c 0.90665,0.51327 2.42701,1.375 4.5625,1.375 2.6188,0 5.40625,-1.941 5.40625,-5 0,-3.28005 -2.30217,-4.01987 -4.625,-5.21875 -2.35279,-1.15204 -3.34375,-1.73957 -3.34375,-3.28125 0,-1.05276 0.6357,-2.59375 2.71875,-2.59375 2.30222,0 3.67465,1.9836 3.96875,3.15625 l -0.125,-3.21875 c -1.15018,-0.76241 -2.59709,-0.9375 -3.5,-0.9375 z m 54.28125,0 c -4.99969,-0.16859 -7.92448,4.34497 -8.03125,8.3125 -0.10678,5.04652 3.53384,8.68575 7.625,8.78125 3.52358,0.12738 7.76822,-2.79461 7.875,-8.375 0.10303,-5.58789 -3.98452,-8.64195 -7.46875,-8.71875 z m -138.6875,0.21875 c 0.36528,0.19857 0.75,0.56116 0.75,1.125 l 0,10.28125 c 0,4.14174 3.61878,5.46875 6.3125,5.46875 3.06276,0 5.65625,-1.48377 5.65625,-5.5 l 0.0625,-10.25 c 0,-0.56384 0.26475,-0.92643 0.65625,-1.125 l -2.71875,0 c 0.39151,0.19857 0.65625,0.56116 0.65625,1.125 l 0.0937,10.34375 c 0,2.20668 -1.03058,4.28125 -4.3125,4.28125 -3.45426,0 -4.0625,-2.58784 -4.0625,-4.28125 l 0,-10.34375 c 0,-0.56384 0.42286,-0.92643 0.8125,-1.125 l -3.90625,0 z m 14.96875,0 c 0.56385,0.24727 0.85338,0.58277 1.125,0.875 0.29223,0.39338 0.28125,0.44441 0.28125,1.15625 l 0,13.53125 c 0,0.53575 -0.25785,0.8727 -0.625,1.09375 l 2.59375,0 c -0.44022,-0.22105 -0.6875,-0.558 -0.6875,-1.09375 l 0,-12.84375 c 0,0.24352 11.71875,14.40625 11.71875,14.40625 l 0,-16 c 0,-0.56384 0.26475,-0.92643 0.65625,-1.125 l -2.53125,0 c 0.36715,0.19857 0.625,0.56116 0.625,1.125 l 0,10.8125 -9.65625,-11.9375 -3.5,0 z m 17.46875,0 c 0.3915,0.19856 0.65625,0.56302 0.65625,1.125 l 0,14.4375 c 0,0.53574 -0.26475,0.87271 -0.65625,1.09375 l 3.625,0 c -0.36716,-0.22104 -0.625,-0.55801 -0.625,-1.09375 l 0,-14.4375 c 0,-0.56198 0.25784,-0.92644 0.625,-1.125 l -3.625,0 z m 4.96875,0 c 0.80924,0.29598 1.01337,0.69671 1.28125,1.1875 0.41773,0.90478 6.71875,16.09375 6.71875,16.09375 0,0 5.70411,-15.1384 6.09375,-16.09375 0.29222,-0.6369 0.23809,-0.77164 0.875,-1.1875 l -2.6875,0 c 0.59007,0.24727 0.62542,0.5993 0.40625,1.1875 0,0.0974 -4.3125,11.625 -4.3125,11.625 0,0 -4.3282,-11.27075 -4.375,-11.34375 -0.17421,-0.61443 -0.16815,-1.22148 0.46875,-1.46875 l -4.46875,0 z m 15.96875,0 c 0.39338,0.19669 0.6875,0.56115 0.6875,1.125 l 0,14.4375 c 0,0.58632 -0.30978,0.87271 -0.75,1.09375 l 9.84375,0 0.53125,-2.71875 c -0.90478,1.54168 -1.85685,1.53125 -4.5,1.53125 -1.15392,0.0225 -2.30613,-0.10565 -2.84375,-0.15625 l 0,-7.21875 4,0 c 0.34093,0 0.75137,0.3934 0.875,0.6875 l 0,-2.65625 c -0.12363,0.29784 -0.53407,0.6875 -0.875,0.6875 l -4,0 0,-5.53125 c 0,0 3.75606,0.0312 4.21875,0.0312 1.05277,0 1.57358,0.31303 2.0625,0.875 l -0.0625,-2.1875 -9.1875,0 z m 11.5625,0 c 0.3709,0.19669 0.6875,0.56116 0.6875,1.125 l 0,14.4375 c 0,0.53575 -0.3166,0.8727 -0.6875,1.09375 l 3.65625,0 c -0.36903,-0.22105 -0.6875,-0.558 -0.6875,-1.09375 l 0,-6.59375 1.4375,0 c 1.27194,0 1.76747,1.05154 2.40625,2.03125 0.85795,1.37121 1.7468,2.72298 3,4.5625 0.36716,0.5114 1.04277,1.15625 2,1.15625 l 2.5,-0.0625 c 0,0 -1.04736,-0.38055 -1.5625,-0.96875 -1.07525,-1.15204 -3.6875,-5.625 -3.6875,-5.625 -0.36903,-0.53949 -1.04874,-1.57213 -2.375,-1.84375 1.52108,-0.12364 3.875,-1.4781 3.875,-4.125 0,-1.54168 -1.04084,-4.09375 -5.9375,-4.09375 l -4.625,0 z m 25.9375,0 c 0.39338,0.19856 0.65625,0.56302 0.65625,1.125 l 0,14.4375 c 0,0.53574 -0.26287,0.87271 -0.65625,1.09375 l 3.625,0 c -0.36716,-0.22104 -0.625,-0.55801 -0.625,-1.09375 l 0,-14.4375 c 0,-0.56198 0.25784,-0.92644 0.625,-1.125 l -3.625,0 z m 5.03125,0 0,2.3125 c 0.22292,-0.39151 0.66555,-0.96875 1.25,-0.96875 0,0 2.19547,-0.15625 4.03125,-0.15625 l 0,14.375 c 0,0.53575 -0.20914,0.8727 -0.625,1.09375 l 3.625,0 c -0.39338,-0.22105 -0.65625,-0.558 -0.65625,-1.09375 l 0,-14.375 c 1.79082,0 4,0.15625 4,0.15625 0.63503,0.0487 1.03772,0.57724 1.28125,0.96875 l -0.0312,-2.3125 -12.875,0 z m 13.4375,0 c 0.68374,0.3428 0.98162,0.5993 1.375,1.1875 l 4.65625,7.6875 0,6.6875 c 0,0.58632 -0.51475,0.87271 -0.90625,1.09375 l 4.1875,0 c -0.44209,-0.22104 -0.90625,-0.55801 -0.90625,-1.09375 l 0,-6.78125 3.96875,-7.4375 c 0.29222,-0.59007 0.72754,-1.04591 1.4375,-1.34375 l -3.25,0 c 0.68374,0.19856 0.87405,0.52812 0.53125,1.1875 l -3.34375,6.375 -3.4375,-6.03125 c -0.6369,-1.15392 -0.15572,-1.28399 0.40625,-1.53125 l -4.71875,0 z m 38.375,0 c 0.39151,0.19669 0.6875,0.56115 0.6875,1.125 l 0,14.4375 c 0,0.58633 -0.24728,0.87271 -0.6875,1.09375 l 3.71875,0 c -0.44209,-0.22104 -0.71875,-0.50742 -0.71875,-1.09375 l 0.0312,-7.46875 4.0625,0 c 0.34093,0 0.72574,0.39527 0.84375,0.6875 l 0,-2.65625 c -0.11801,0.2941 -0.50282,0.6875 -0.84375,0.6875 l -4.0625,0 -0.0312,-5.59375 c 0,0 4.10304,0.0431 4.6875,0.0937 1.20074,0 1.75094,0.35117 2.09375,0.9375 l 0,-2.25 -9.78125,0 z m -9.28125,0.8125 c 3.16203,0 5.17,3.02381 5.125,7.75 0,4.40774 -1.9398,7.1875 -5.0625,7.1875 -2.59631,0 -5.25,-2.41628 -5.25,-7.78125 0,-4.47893 2.0648,-7.15625 5.1875,-7.15625 z m -68.6875,0.1875 c 2.59445,0 3.28125,2.03545 3.28125,3.1875 0,2.57196 -1.82549,3.5625 -3.6875,3.5625 -0.6369,0 -1.4375,-0.0625 -1.4375,-0.0625 l 0,-6.625 c 0,0 0.74041,-0.0625 1.84375,-0.0625 z m -181.15625,9.375 c -3.40368,0 -6.45691,0.9906 -9.15625,2.96875 -2.69935,1.9744 -4.0625,4.73835 -4.0625,8.3125 0,2.54949 0.76077,4.73541 2.25,6.5 1.48923,1.7646 3.82928,3.44589 7.0625,5.0625 4.46768,2.21605 7.38815,3.82283 8.75,4.84375 1.35623,1.01904 2.03125,2.90692 2.03125,5.625 0,2.08679 -0.67502,4.03607 -2.03125,5.84375 -1.36185,1.80581 -3.56225,2.6875 -6.625,2.6875 -3.10584,0 -5.59738,-1.00065 -7.46875,-3.03125 -1.87324,-2.02497 -3.26458,-4.4702 -4.15625,-7.34375 l 0.1875,9.53125 c 2.25351,1.18577 4.20466,2.06244 5.84375,2.65625 1.63721,0.59195 3.65036,0.875 6.03125,0.875 3.61911,0 6.85771,-1.21167 9.75,-3.65625 2.89229,-2.44459 4.34375,-5.56167 4.34375,-9.34375 0,-2.71807 -0.54039,-4.86398 -1.625,-6.4375 -1.08273,-1.56978 -2.36635,-2.78894 -3.8125,-3.65625 -1.44614,-0.87293 -3.64841,-2.04203 -6.625,-3.53125 -3.48798,-1.74212 -5.78733,-3.14598 -6.9375,-4.1875 -1.14455,-1.04527 -1.75,-2.50738 -1.75,-4.375 0,-1.65408 0.60545,-3.17009 1.75,-4.59375 1.15017,-1.42367 2.9179,-2.15625 5.34375,-2.15625 2.76304,0 5.07796,0.88042 6.90625,2.65625 1.82828,1.77959 2.96919,3.67121 3.4375,5.625 l -0.3125,-8.40625 c -2.46894,-1.64097 -5.51151,-2.46875 -9.125,-2.46875 z m 101.59375,0 -7.8125,1.53125 c 0.76616,0.29598 1.32596,0.57528 1.6875,0.875 0.36154,0.29597 0.5625,0.84701 0.5625,1.65625 l 0,37.5 c 0,1.01717 -0.54917,1.81055 -1.65625,2.40625 l 9,0 c -0.67999,-0.38402 -1.14961,-0.7472 -1.40625,-1.09375 -0.25476,-0.33718 -0.375,-0.78927 -0.375,-1.34375 l 0,-20.6875 c 0.68186,-0.89354 1.65305,-1.65312 2.90625,-2.3125 1.25508,-0.65938 2.61449,-1 4.0625,-1 2.46519,0 4.20285,0.64811 5.25,1.96875 1.03965,1.32251 1.5625,3.07891 1.5625,5.25 l 0,16.78125 c 0,0.97971 -0.57045,1.79872 -1.71875,2.4375 l 8.8125,0 c -0.67998,-0.42523 -1.13207,-0.74524 -1.34375,-1 -0.21355,-0.25663 -0.34375,-0.72251 -0.34375,-1.40625 l 0,-18.875 c 0,-2.80425 -0.89924,-4.98208 -2.75,-6.53125 -1.85077,-1.54918 -4.13376,-2.34375 -6.8125,-2.34375 -2.93537,0 -6.13515,1.53159 -9.625,4.5625 l 0,-18.375 z m -19.28125,8.71875 -8.34375,8.53125 2.75,0 0,18.0625 c 0,2.89041 0.82217,5.14216 2.46875,6.78125 1.64096,1.63722 3.79998,2.4375 6.4375,2.4375 1.6597,0 3.14998,-0.49781 4.46875,-1.5 1.31689,-1.0078 1.96875,-1.94459 1.96875,-2.84375 -0.68373,0.59569 -1.24857,1.02462 -1.71875,1.28125 -0.46644,0.25851 -1.26979,0.375 -2.375,0.375 -3.87012,0 -5.8125,-2.20602 -5.8125,-6.625 l 0,-17.96875 6.71875,0 2.21875,-2.65625 -8.78125,0 0,-5.875 z m 156,0 -8.3125,8.53125 2.71875,0 0,18.0625 c 0,2.89041 0.82592,5.14216 2.46875,6.78125 1.64471,1.63722 3.79998,2.4375 6.4375,2.4375 1.65782,0 3.15186,-0.49781 4.46875,-1.5 1.32064,-1.0078 1.96875,-1.94459 1.96875,-2.84375 -0.68186,0.59569 -1.24856,1.02462 -1.71875,1.28125 -0.46831,0.25851 -1.26979,0.375 -2.375,0.375 -3.87012,0 -5.8125,-2.20602 -5.8125,-6.625 l 0,-17.96875 6.71875,0 2.21875,-2.65625 -8.78125,0 0,-5.875 z m -209.0625,5.09375 c -2.76678,0 -5.23704,0.75388 -7.40625,2.21875 -2.16922,1.46675 -3.81858,3.37975 -4.96875,5.78125 -1.14643,2.40337 -1.71875,4.88614 -1.71875,7.4375 0,3.9488 1.17471,7.47293 3.53125,10.59375 2.36216,3.1227 5.84431,4.6875 10.4375,4.6875 2.71995,0 5.15699,-0.71385 7.28125,-2.15625 2.12988,-1.44801 3.77736,-3.38665 4.96875,-5.8125 1.19325,-2.41836 1.78125,-4.85106 1.78125,-7.3125 0,-2.63752 -0.50344,-5.13094 -1.5,-7.46875 -1.00219,-2.33593 -2.56137,-4.23139 -4.6875,-5.71875 -2.12988,-1.48735 -4.70095,-2.25 -7.71875,-2.25 z m 22.75,0 -7.71875,1.53125 c 1.44427,0.46832 2.15625,1.32804 2.15625,2.5625 l 0,14.65625 c 0,4.20918 1.0463,7.26428 3.09375,9.15625 2.04746,1.89198 4.24411,2.8125 6.625,2.8125 2.74618,0 5.26088,-0.91234 7.53125,-2.75 l 1.125,-3.71875 c -0.96097,0.91977 -1.66837,1.43548 -2.59375,1.9375 -1.01904,0.55261 -2.22194,0.84375 -3.625,0.84375 -1.87324,0 -3.43243,-0.74135 -4.6875,-2.1875 -1.25507,-1.44614 -1.90625,-3.46618 -1.90625,-6.0625 l 0,-18.78125 z m 18.78125,0 -7.65625,1.53125 c 0.67999,0.17047 1.22038,0.44407 1.625,0.78125 0.40275,0.34093 0.59375,0.9308 0.59375,1.78125 l 0,19.46875 0.0937,2.75 c 0.007,-0.0112 0.0182,-0.0219 0.0312,-0.0312 0,1.27194 0.18657,2.19118 0.53125,2.78125 0.33906,0.59757 0.9308,1.14673 1.78125,1.65625 l 5.53125,-2.03125 c -1.7009,-0.25101 -2.53125,-1.45765 -2.53125,-3.625 l 0,-25.0625 z m 67.09375,0 c -3.44489,0 -6.78995,1.07449 -10.0625,3.1875 l 0.125,7.875 c 0.89541,-2.66375 2.03444,-4.76895 3.4375,-6.3125 1.40305,-1.54355 3.3279,-2.3125 5.75,-2.3125 1.87137,0 3.26084,0.54039 4.15625,1.625 0.89166,1.08461 1.3125,2.37768 1.3125,3.90625 0,1.61474 -0.0795,2.51704 -0.25,2.6875 -0.55448,0.64065 -1.34225,1.13156 -2.40625,1.46875 -1.064,0.33905 -2.87737,0.88319 -5.40625,1.625 -2.53075,0.74555 -4.25463,1.4043 -5.1875,2 -2.84921,1.69903 -4.28125,4.11291 -4.28125,7.21875 0,1.74212 0.64122,3.46411 1.9375,5.1875 1.29629,1.71776 3.20861,2.5625 5.71875,2.5625 2.96347,0 5.68169,-0.98439 8.15625,-3 l 1.15625,-3.375 c -1.98751,1.82641 -4.20171,2.78125 -6.6875,2.78125 -1.44427,0 -2.63772,-0.47712 -3.53125,-1.40625 -0.89354,-0.92538 -1.3125,-2.22842 -1.3125,-3.875 0,-1.47799 0.41896,-2.6452 1.3125,-3.53125 0.89353,-0.88604 2.22288,-1.66751 3.96875,-2.34375 3.6547,-1.13518 5.92084,-1.94356 6.8125,-2.40625 l 0,10.25 c -0.0169,0.0169 0.0806,2.23186 0.0937,2.21875 0.0393,1.50796 0.20028,2.51236 0.5,3.03125 0.29785,0.51514 0.86455,1.07248 1.71875,1.71875 l 4.93755,-2.1875 c -0.89167,-0.17047 -1.43393,-0.44978 -1.625,-0.875 -0.1892,-0.42336 -0.3125,-1.12963 -0.3125,-2.0625 l 0,-17.0625 c 0,-3.31002 -1.01317,-5.53989 -3.0625,-6.75 -2.04933,-1.21199 -4.37431,-1.84375 -6.96875,-1.84375 z m 21.1875,0 -7.78125,1.53125 c 0.67812,0.17046 1.2329,0.44219 1.65625,0.78125 0.42336,0.34093 0.625,0.9308 0.625,1.78125 l 0,23.65625 c 0,0.97409 -0.55103,1.77122 -1.65625,2.40625 l 8.9375,0 c -0.68186,-0.42148 -1.15149,-0.76091 -1.40625,-1.0625 -0.25289,-0.29598 -0.375,-0.74619 -0.375,-1.34375 l 0,-20.875 c 1.7852,-2.16547 3.92736,-3.25 6.4375,-3.25 4.42273,0 6.625,2.27423 6.625,6.78125 l 0,17.34375 c 0,0.97409 -0.54917,1.77122 -1.65625,2.40625 l 8.90625,0 c -0.55448,-0.33718 -0.97464,-0.66597 -1.25,-1.03125 -0.27537,-0.36341 -0.40625,-0.82052 -0.40625,-1.375 l 0,-19.15625 c 0,-0.42523 -0.0426,-0.72582 -0.125,-0.9375 1.91446,-2.68061 4.19439,-4.03125 6.875,-4.03125 2.33781,0 4.02788,0.67059 5.09375,1.96875 1.06213,1.29629 1.59375,2.97946 1.59375,5.0625 l 0,17.09375 c 0,0.89166 -0.59174,1.6888 -1.78125,2.40625 l 8.875,0 c -0.55448,-0.33718 -0.97276,-0.66597 -1.25,-1.03125 -0.2735,-0.35966 -0.40625,-0.81865 -0.40625,-1.375 l 0,-19 c 0,-2.76678 -0.97306,-4.90519 -2.90625,-6.4375 -1.93319,-1.52857 -4.10353,-2.3125 -6.53125,-2.3125 -1.91258,0 -3.78607,0.54789 -5.59375,1.625 -1.80956,1.07524 -3.30862,2.41021 -4.5,3.96875 -0.59757,-1.77209 -1.71531,-3.15841 -3.375,-4.125 -1.66344,-0.97034 -3.44301,-1.46875 -5.3125,-1.46875 -1.87137,0 -3.53137,0.44707 -5,1.3125 -1.463,0.8617 -2.90944,1.88611 -4.3125,3.0625 l 0,-4.375 z m 48.15625,0 -7.59375,1.6875 c 1.40306,0.42335 2.09375,1.29628 2.09375,2.65625 l 0,37.96875 c 0,1.1483 -0.54917,1.97106 -1.65625,2.4375 l 8.875,0 c -1.10896,-0.51514 -1.65625,-1.33042 -1.65625,-2.4375 l 0,-35.65625 c 0.72307,-0.88979 1.64479,-1.62306 2.75,-2.21875 1.10334,-0.59569 2.3569,-0.90625 3.71875,-0.90625 2.16734,0 4.12982,0.90604 5.9375,2.6875 1.80956,1.78145 2.71875,4.85222 2.71875,9.21875 0,4.02934 -0.8197,7.15836 -2.5,9.40625 -1.6803,2.24789 -3.9633,3.375 -6.8125,3.375 -2.08305,0 -3.04731,-0.43643 -4.84375,-1.96875 l 1.46875,3.9375 c 1.29816,0.36341 2.68762,0.53125 4.15625,0.53125 4.46581,0 8.00995,-1.61428 10.625,-4.84375 2.61692,-3.2276 3.90625,-6.77617 3.90625,-10.6875 0,-2.46332 -0.39384,-4.69939 -1.15625,-6.71875 -0.76616,-2.01748 -1.73803,-3.63176 -2.96875,-4.84375 -1.23447,-1.21199 -2.5657,-2.12493 -3.96875,-2.71875 -1.40306,-0.59569 -2.85639,-0.90625 -4.34375,-0.90625 -1.87137,0 -3.57395,0.42074 -5.125,1.21875 -1.55479,0.79425 -2.77455,1.68157 -3.625,2.6875 l 0,-3.90625 z m 54.90625,0 c -2.76491,0 -5.23703,0.75388 -7.40625,2.21875 -2.16922,1.46675 -3.81858,3.37975 -4.96875,5.78125 -1.15017,2.40337 -1.71875,4.88614 -1.71875,7.4375 0,3.9488 1.17096,7.47293 3.53125,10.59375 2.36029,3.1227 5.84244,4.6875 10.4375,4.6875 2.71995,0 5.12199,-0.71385 7.25,-2.15625 2.12425,-1.44801 3.80674,-3.38665 5,-5.8125 1.18764,-2.41836 1.78125,-4.85106 1.78125,-7.3125 0,-2.63752 -0.50531,-5.13094 -1.5,-7.46875 -1.00593,-2.33593 -2.56324,-4.23139 -4.6875,-5.71875 -2.12426,-1.48735 -4.70283,-2.25 -7.71875,-2.25 z m 22.78125,0 -7.6875,1.40625 c 1.40681,0.51327 2.125,1.41369 2.125,2.6875 l 0,23.65625 c 0,1.01904 -0.52788,1.81431 -1.59375,2.40625 l 8.8125,0 c -0.55823,-0.33718 -0.97838,-0.66597 -1.25,-1.03125 -0.27911,-0.36341 -0.40625,-0.82052 -0.40625,-1.375 l 0,-20.6875 c 0.76803,-0.93663 1.73734,-1.73623 2.90625,-2.375 1.1689,-0.63878 2.34174,-0.96875 3.53125,-0.96875 4.50889,0 6.78125,2.4665 6.78125,7.40625 l 0,16.625 c 0,1.01905 -0.55291,1.81243 -1.65625,2.40625 l 8.71875,0 c -0.71933,-0.54886 -1.18393,-0.93274 -1.375,-1.1875 -0.19111,-0.25663 -0.28125,-0.6624 -0.28125,-1.21875 l 0,-18.875 c 0,-1.8695 -0.44145,-3.45559 -1.3125,-4.75 -0.87294,-1.30003 -2.04576,-2.31005 -3.53125,-3.03125 -1.4911,-0.72307 -3.0221,-1.09375 -4.59375,-1.09375 -1.74586,0 -3.44282,0.50965 -5.125,1.46875 -1.68029,0.9591 -3.03971,1.98479 -4.0625,3.09375 l 0,-4.5625 z m -256.21875,2.34375 c 1.86949,-0.0412 3.42178,0.51859 4.65625,1.6875 1.23072,1.16328 2.18249,2.66175 2.84375,4.53125 0.65563,1.86575 1.06199,4.02102 1.1875,6.4375 0.12738,3.73337 -0.5025,6.8342 -1.84375,9.3125 -1.34124,2.48392 -3.30185,3.78074 -5.9375,3.90625 -2.51015,0.12925 -4.54083,-1.01915 -6.09375,-3.4375 -1.55291,-2.41836 -2.40387,-5.42525 -2.53125,-9.03125 -0.12738,-3.68841 0.46436,-6.81053 1.78125,-9.375 1.32064,-2.56634 3.29997,-3.90761 5.9375,-4.03125 z m 232.84375,0 c 1.8695,-0.0412 3.42178,0.51859 4.65625,1.6875 1.2326,1.16328 2.18249,2.66175 2.84375,4.53125 0.6575,1.86575 1.06199,4.02102 1.1875,6.4375 0.12925,3.73337 -0.47501,6.8342 -1.8125,9.3125 -1.34125,2.48392 -3.33684,3.78074 -5.96875,3.90625 -2.51202,0.12925 -4.54083,-1.01915 -6.09375,-3.4375 -1.55104,-2.41836 -2.40199,-5.42525 -2.53125,-9.03125 -0.12925,-3.68841 0.46248,-6.81053 1.78125,-9.375 1.31501,-2.56634 3.29997,-3.90761 5.9375,-4.03125 z"
+       id="path36"
+       style="fill:#005882;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+  </g>
+</svg>
+
+        
+    </figure>
+    
+    <div class="flex flex-col gap-y-1.5 p-6 " >
+    
+        <h3
+    class="
+    font-semibold leading-none tracking-tight
+    
+        mx-auto
+    
+    "
+    class="mx-auto"
+  >
+    University of Southampton
+  </h3>
+
+        <p class="text-sm text-muted-foreground text-center" class="text-center">
+    Experience working in a research-intensive environment at the intersection of engineering, technology, data, and innovation.
+</p>
+
+    
+</div>
+
+    <div class="flex items-center p-6 pt-0 " >
+    
+        
+        <div class="w-full flex justify-end mt-3">
+            
+
+<a
+    
+        href="None"
+    
+    class="
+    inline-flex
+    items-center
+    justify-center
+    gap-2
+    whitespace-nowrap
+    rounded-md
+    text-sm
+    font-medium
+    transition-colors
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    
+    disabled:opacity-50
+    [&_svg]:pointer-events-none
+    [&_svg]:size-4
+    [&_svg]:shrink-0
+
+    bg-primary text-primary-foreground shadow-sm hover:bg-primary/90
+    
+
+    h-9 px-4 py-2
+    
+
+    
+    inline-flex items-center gap-1.5
+    
+    "
+    
+    href="None" class="inline-flex items-center gap-1.5" target="_blank" rel="noopener noreferrer"
+>
+    
+    <span>Website</span>
+    <i data-lucide="external-link" class="h-4 w-4"></i>
+
+</a>
+
+        </div>
+        
+    
+</div>
+
+
+  </div>
+
+
+        
+    
+</div>
+
+</section>
+
+   	
+  
+   	
+        
+
+<section id="faq" 
+    class=""
+    id="faq" >
+  
+    <h2 class="text-center mb-4 text-2xl">Frequently Asked Questions</h2>
+    <div class="mx-auto text-center max-w-148 pb-6 font-light leading-relaxed "
+     >
+    
+    
+    Have questions about how I work, the types of projects I take on, or what it's like to work with me?
+    
+    Explore the answers to some of the questions I hear most often.
+    
+    
+</div>
+
+    
+
+<div
+  x-data="{
+    open: {},
+    type: 'single',
+    collapsible: true,
+
+    toggle(value) {
+      if (this.type === 'single') {
+        // For single type, close all others when one is opened
+        if (this.collapsible && this.open[value]) {
+          this.open[value] = false;
+        } else {
+          const newOpen = {};
+          newOpen[value] = true;
+          this.open = newOpen;
+        }
+      } else {
+        // For multiple type, toggle the clicked one
+        this.open[value] = !this.open[value];
+      }
+    },
+
+    isOpen(value) {
+      return !!this.open[value];
+    }
+  }"
+  class="mx-auto max-w-3xl"
+  class="mx-auto max-w-3xl"
+>
+  
+    
+        
+
+<div
+  class="border-b "
+  
+>
+  
+            
+
+<h3 class="flex">
+  <button
+    @click="toggle('item-1')"
+    class="flex flex-1 items-center justify-between py-4 text-sm font-medium hover:underline [&[data-state=open]>svg]:rotate-180 "
+    x-bind:aria-expanded="isOpen('item-1')"
+    x-bind:data-state="isOpen('item-1') ? 'open' : 'closed'"
+    
+  >
+    
+                What types of projects do you work on?
+            
+    <!-- Chevron Icon -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="size-4 shrink-0 text-muted-foreground transition-transform duration-200 ease-out"
+    >
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </button>
+</h3>
+
+            
+
+<div
+  x-show="isOpen('item-1')"
+  x-collapse.duration.300ms
+  x-cloak
+  class="overflow-hidden text-sm"
+  
+>
+  <div class="pb-4 pt-0 ">
+    
+                I work on software, data, AI, automation, and technology projects that solve specific business problems. This can include custom web applications, internal tools and portals, system integrations, workflow automation, data engineering and visualisation, predictive AI, and improvements to existing technology systems.<br><br>The focus is always on building practical, maintainable solutions that deliver measurable value rather than introducing technology for its own sake.
+            
+  </div>
+</div>
+
+        
+</div>
+
+    
+        
+
+<div
+  class="border-b "
+  
+>
+  
+            
+
+<h3 class="flex">
+  <button
+    @click="toggle('item-2')"
+    class="flex flex-1 items-center justify-between py-4 text-sm font-medium hover:underline [&[data-state=open]>svg]:rotate-180 "
+    x-bind:aria-expanded="isOpen('item-2')"
+    x-bind:data-state="isOpen('item-2') ? 'open' : 'closed'"
+    
+  >
+    
+                Do you work with existing systems and development teams?
+            
+    <!-- Chevron Icon -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="size-4 shrink-0 text-muted-foreground transition-transform duration-200 ease-out"
+    >
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </button>
+</h3>
+
+            
+
+<div
+  x-show="isOpen('item-2')"
+  x-collapse.duration.300ms
+  x-cloak
+  class="overflow-hidden text-sm"
+  
+>
+  <div class="pb-4 pt-0 ">
+    
+                Yes. I work with both existing technology environments and established development teams.<br><br>This can include integrating APIs, databases, SaaS platforms, and internal systems, modernising existing software, improving technology ecosystems, or contributing alongside an existing development team. The goal is to work with what you already have where it makes sense, rather than replacing systems unnecessarily.
+            
+  </div>
+</div>
+
+        
+</div>
+
+    
+        
+
+<div
+  class="border-b "
+  
+>
+  
+            
+
+<h3 class="flex">
+  <button
+    @click="toggle('item-3')"
+    class="flex flex-1 items-center justify-between py-4 text-sm font-medium hover:underline [&[data-state=open]>svg]:rotate-180 "
+    x-bind:aria-expanded="isOpen('item-3')"
+    x-bind:data-state="isOpen('item-3') ? 'open' : 'closed'"
+    
+  >
+    
+                Can you help define a solution before development begins?
+            
+    <!-- Chevron Icon -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="size-4 shrink-0 text-muted-foreground transition-transform duration-200 ease-out"
+    >
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </button>
+</h3>
+
+            
+
+<div
+  x-show="isOpen('item-3')"
+  x-collapse.duration.300ms
+  x-cloak
+  class="overflow-hidden text-sm"
+  
+>
+  <div class="pb-4 pt-0 ">
+    
+                Yes. Projects can start before any development takes place.<br><br>I can help understand the business requirements, assess the current situation, explore possible approaches, and define a practical technical solution. This can include requirements, architecture, technology choices, and an implementation approach before development begins.<br><br>The aim is to make sure the solution addresses the underlying business problem before significant development work is undertaken.
+            
+  </div>
+</div>
+
+        
+</div>
+
+    
+        
+
+<div
+  class="border-b "
+  
+>
+  
+            
+
+<h3 class="flex">
+  <button
+    @click="toggle('item-4')"
+    class="flex flex-1 items-center justify-between py-4 text-sm font-medium hover:underline [&[data-state=open]>svg]:rotate-180 "
+    x-bind:aria-expanded="isOpen('item-4')"
+    x-bind:data-state="isOpen('item-4') ? 'open' : 'closed'"
+    
+  >
+    
+                How do you structure and price projects?
+            
+    <!-- Chevron Icon -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="size-4 shrink-0 text-muted-foreground transition-transform duration-200 ease-out"
+    >
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </button>
+</h3>
+
+            
+
+<div
+  x-show="isOpen('item-4')"
+  x-collapse.duration.300ms
+  x-cloak
+  class="overflow-hidden text-sm"
+  
+>
+  <div class="pb-4 pt-0 ">
+    
+                Project structure and pricing depend on the nature, scope, and complexity of the work.<br><br>After understanding your requirements and objectives, I can determine the appropriate approach and scope of work. Some projects may be clearly defined from the outset, while others benefit from an initial discovery or technical phase before the full scope is established.<br><br>Pricing is therefore discussed based on the specific project rather than applying a one-size-fits-all package.
+            
+  </div>
+</div>
+
+        
+</div>
+
+    
+        
+
+<div
+  class="border-b "
+  
+>
+  
+            
+
+<h3 class="flex">
+  <button
+    @click="toggle('item-5')"
+    class="flex flex-1 items-center justify-between py-4 text-sm font-medium hover:underline [&[data-state=open]>svg]:rotate-180 "
+    x-bind:aria-expanded="isOpen('item-5')"
+    x-bind:data-state="isOpen('item-5') ? 'open' : 'closed'"
+    
+  >
+    
+                Do you provide support after a project goes live?
+            
+    <!-- Chevron Icon -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="size-4 shrink-0 text-muted-foreground transition-transform duration-200 ease-out"
+    >
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </button>
+</h3>
+
+            
+
+<div
+  x-show="isOpen('item-5')"
+  x-collapse.duration.300ms
+  x-cloak
+  class="overflow-hidden text-sm"
+  
+>
+  <div class="pb-4 pt-0 ">
+    
+                Yes. My involvement can continue beyond the initial development and deployment of a solution.<br><br>This can include optimisation, improvements, integration work, and ongoing technical development as your requirements evolve. The appropriate level of ongoing involvement depends on the project and your needs.
+            
+  </div>
+</div>
+
+        
+</div>
+
+    
+        
+
+<div
+  class="border-b "
+  
+>
+  
+            
+
+<h3 class="flex">
+  <button
+    @click="toggle('item-6')"
+    class="flex flex-1 items-center justify-between py-4 text-sm font-medium hover:underline [&[data-state=open]>svg]:rotate-180 "
+    x-bind:aria-expanded="isOpen('item-6')"
+    x-bind:data-state="isOpen('item-6') ? 'open' : 'closed'"
+    
+  >
+    
+                How does a typical project get started?
+            
+    <!-- Chevron Icon -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="size-4 shrink-0 text-muted-foreground transition-transform duration-200 ease-out"
+    >
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </button>
+</h3>
+
+            
+
+<div
+  x-show="isOpen('item-6')"
+  x-collapse.duration.300ms
+  x-cloak
+  class="overflow-hidden text-sm"
+  
+>
+  <div class="pb-4 pt-0 ">
+    
+                It starts with a conversation about your project, where you are today, and what you are trying to achieve.<br><br>During the initial consultation, I learn about your requirements, understand the problem you are trying to solve, explore possible approaches, and determine whether I can help.<br><br>If there is a good fit, we can then define the appropriate technical approach, scope, and next steps.
+            
+  </div>
+</div>
+
+        
+</div>
+
+    
+    
+</div>
+
+
+</section>
+   	
+  
+   	
+        
+
+<section id="book-consultation" 
+    class=""
+    id="book-consultation" >
+  
+    <h2 class="text-center mb-4 text-2xl">Let's Talk About Your Project</h2>
+    <div class="mx-auto text-center max-w-148 pb-6 font-light leading-relaxed "
+     >
+    
+        
+        Have a software, data, AI, automation, or technology challenge you'd like to discuss?
+        
+    
+</div>
+
+    <div class="mx-auto text-center max-w-148 pb-6 font-light leading-relaxed text-center"
+    class="text-center" >
+    
+        <div class="flex flex-col gap-3">
+            <div>
+                
+                Tell me a little about your project, where you are today, and what you're trying to achieve. During the initial consultation, I'll learn about your needs, explore possible approaches, and determine whether I can help.
+                
+            </div>
+            <div class="text-center">
+                
+
+<div
+  x-data="{
+    open: false,
+
+    showDialog() {
+      this.open = true;
+      document.body.classList.add('overflow-hidden');
+    },
+
+    hideDialog() {
+      this.open = false;
+      document.body.classList.remove('overflow-hidden');
+    }
+  }"
+  x-init="
+    $watch('open', value => {
+      if (value) {
+        document.body.classList.add('overflow-hidden');
+      } else {
+        document.body.classList.remove('overflow-hidden');
+      }
+    })
+  "
+  @show-dialog.window="showDialog()"
+  @keydown.escape.window="if (open) hideDialog()"
+  
+>
+  
+    
+
+
+  
+<button
+    class="
+    inline-flex
+    items-center
+    justify-center
+    gap-2
+    whitespace-nowrap
+    rounded-md
+    text-sm
+    font-medium
+    transition-colors
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:pointer-events-none
+    disabled:opacity-50
+    [&_svg]:pointer-events-none
+    [&_svg]:size-4
+    [&_svg]:shrink-0
+
+    bg-primary text-primary-foreground shadow-sm hover:bg-primary/90
+    
+
+    h-9 px-4 py-2
+    
+
+    
+    "
+    @click.stop="showDialog()" class="" {{ attrs }}
+>
+    
+    
+        Book a free consultation
+    
+  
+</button>
+
+
+
+    <div
+  x-show="open"
+  x-transition:enter="ease-out duration-300"
+  x-transition:enter-start="opacity-0"
+  x-transition:enter-end="opacity-100"
+  x-transition:leave="ease-in duration-200"
+  x-transition:leave-start="opacity-100"
+  x-transition:leave-end="opacity-0"
+  class="fixed inset-0 z-50 flex items-center justify-center z-60! text-left"
+  x-cloak
+  role="dialog"
+  aria-modal="true"
+>
+  <!-- Backdrop -->
+  <div class="fixed inset-0 bg-background/80 backdrop-blur-xs" aria-hidden="true" @click="hideDialog"></div>
+
+  <!-- Dialog -->
+  <div
+    x-transition:enter="ease-out duration-300"
+    x-transition:enter-start="opacity-0 scale-95"
+    x-transition:enter-end="opacity-100 scale-100"
+    x-transition:leave="ease-in duration-200"
+    x-transition:leave-start="opacity-100 scale-100"
+    x-transition:leave-end="opacity-0 scale-95"
+    @click.away="hideDialog"
+    class="fixed z-50 grid w-full max-w-lg gap-4 border bg-background p-6 shadow-lg sm:rounded-lg md:w-full z-60! text-left"
+    x-init="$nextTick(() => { $el.querySelector('button, [tabindex], input, select, textarea') && $el.querySelector('button, [tabindex], input, select, textarea').focus() })"
+    tabindex="-1"
+    class="z-60! text-left"
+  >
+    
+<button
+    class="
+    inline-flex
+    items-center
+    justify-center
+    gap-2
+    whitespace-nowrap
+    rounded-md
+    text-sm
+    font-medium
+    transition-colors
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:pointer-events-none
+    disabled:opacity-50
+    [&_svg]:pointer-events-none
+    [&_svg]:size-4
+    [&_svg]:shrink-0
+
+    hover:bg-accent hover:text-accent-foreground
+    
+
+    h-9 px-4 py-2
+    
+
+    
+    absolute right-4 top-4 data-[state=open]:bg-accent data-[state=open]:text-muted-foreground
+    
+    "
+    type="button" class="absolute right-4 top-4 data-[state=open]:bg-accent data-[state=open]:text-muted-foreground" @click="hideDialog"
+>
+    
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+        <path d="M18 6 6 18"></path>
+        <path d="m6 6 12 12"></path>
+      </svg>
+      <span class="sr-only">Close</span>
+    
+</button>
+
+    
+        <div class="flex flex-col space-y-1.5 text-center sm:text-left " >
+  
+            <h2 class="text-lg font-semibold leading-none tracking-tight " >
+  Contact
+</h2>
+
+            <p class="text-sm text-muted-foreground " >
+  
+                <p class="py-4">Send us a message by <a href="#">email</a>, or use this form.</p>
+            
+</p>
+
+        
+</div>
+
+        
+
+<div data-fs-success>Thank you for your message!</div>
+<div data-fs-error>
+    Submission failed.
+    
+        
+            Contact us at augustin.consulting.ltd@gmail.com.
+        
+    
+        
+    
+</div>
+<form id="contact-form" class="space-y-4">
+    <div class="space-y-2 " >
+    
+        
+
+<label
+    class="
+    text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70
+    
+        
+    
+    
+    
+    
+    "
+    class="
+    
+    
+    " {{ attrs }}
+>
+    
+    <label for="id_email">Email:</label>
+
+</label>
+
+
+        <input
+    class="
+    flex
+    h-9
+    w-full
+    rounded-md
+    border
+    border-input
+    bg-transparent
+    px-3
+    py-1
+    text-sm
+    shadow-xs
+    transition-colors
+    file:border-0
+    file:bg-transparent
+    file:text-sm
+    file:font-medium
+    placeholder:text-muted-foreground
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:cursor-not-allowed
+    disabled:opacity-50
+    md:text-sm
+    
+    "
+    type="email" id="id_email" placeholder="example@email.com" name="email" value="" data-fs-field
+>
+    
+</input>
+
+        <div class="text-[0.8rem] font-medium text-destructive " data-fs-error="email">
+    
+        
+</div>
+
+        <p class="text-sm text-muted-foreground " >
+  
+            
+        
+</p>
+
+    
+</div>
+
+    
+    <div class="space-y-2 " >
+    
+        
+
+<label
+    class="
+    text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70
+    
+        
+    
+    
+    
+    
+    "
+    class="
+    
+    
+    " {{ attrs }}
+>
+    
+    <label for="id_subject">Subject:</label>
+
+</label>
+
+
+        <input
+    class="
+    flex
+    h-9
+    w-full
+    rounded-md
+    border
+    border-input
+    bg-transparent
+    px-3
+    py-1
+    text-sm
+    shadow-xs
+    transition-colors
+    file:border-0
+    file:bg-transparent
+    file:text-sm
+    file:font-medium
+    placeholder:text-muted-foreground
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:cursor-not-allowed
+    disabled:opacity-50
+    md:text-sm
+    
+    "
+    type="text" id="id_subject" placeholder="Subject" name="subject" value="" data-fs-field
+>
+    
+</input>
+
+        <div class="text-[0.8rem] font-medium text-destructive " data-fs-error="subject">
+    
+        
+</div>
+
+        <p class="text-sm text-muted-foreground " >
+  
+            
+        
+</p>
+
+    
+</div>
+
+    
+    <div class="space-y-2 " >
+    
+        
+
+<label
+    class="
+    text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70
+    
+        
+    
+    
+    
+    
+    "
+    class="
+    
+    
+    " {{ attrs }}
+>
+    
+    <label for="id_message">Message:</label>
+
+</label>
+
+
+        <textarea
+    class="
+    flex
+    min-h-[60px]
+    w-full
+    rounded-md
+    border
+    border-input
+    bg-transparent
+    px-3
+    py-2
+    text-sm
+    shadow-xs
+    placeholder:text-muted-foreground
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:cursor-not-allowed
+    disabled:opacity-50
+
+    
+        h-50
+    
+    "
+    id="id_message" placeholder="Message" class="h-50" name="message" value="" data-fs-field
+>
+</textarea>
+
+        <div class="text-[0.8rem] font-medium text-destructive " data-fs-error="message">
+    
+        
+</div>
+
+        <p class="text-sm text-muted-foreground " >
+  
+            
+        
+</p>
+
+    
+</div>
+
+
+    <div class="space-y-2 " >
+    
+        
+
+<div x-data="{ switchOn: true }" class="flex items-center justify-center space-x-2">
+    <label @click="$refs.switchButton.click(); $refs.switchButton.focus()" :id="$id('switch')" 
+        class="text-sm select-none"
+        x-cloak>
+        
+            Stay in the loop with periodic industry insights and updates from our team.
+        
+    </label>
+
+    <input id="thisId" type="checkbox" name="newsletter" class="hidden" :checked="switchOn">
+
+    <button 
+        x-ref="switchButton"
+        type="button" 
+        @click="switchOn = ! switchOn"
+        :class="switchOn ? 'bg-primary' : 'bg-muted'" 
+        class="relative inline-flex h-6 py-0.5 ml-4 focus:outline-none rounded-full w-10"
+        x-cloak>
+        <span :class="switchOn ? 'translate-x-[18px]' : 'translate-x-0.5'" class="w-5 h-5 duration-200 ease-in-out bg-background rounded-full shadow-md"></span>
+    </button>
+</div>
+
+    
+</div>
+
+    
+    <div class="text-right">
+        
+<button
+    class="
+    inline-flex
+    items-center
+    justify-center
+    gap-2
+    whitespace-nowrap
+    rounded-md
+    text-sm
+    font-medium
+    transition-colors
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:pointer-events-none
+    disabled:opacity-50
+    [&_svg]:pointer-events-none
+    [&_svg]:size-4
+    [&_svg]:shrink-0
+
+    bg-primary text-primary-foreground shadow-sm hover:bg-primary/90
+    
+
+    h-9 px-4 py-2
+    
+
+    
+    "
+    type="submit" data-fs-submit-btn
+>
+    
+            Send Message
+        
+</button>
+
+    </div>
+</form>
+
+
+    
+  </div>
+</div>
+
+
+</div>
+
+
+            </div>
+        </div>
+    
+</div>
+
+
+</section>
+   	
+  
+   	
+        
+
+<section id="newsletter" 
+    class=""
+    id="newsletter" >
+  
+    <h2 class="text-center mb-4 text-2xl">Stay Ahead of the Curve</h2>
+    <div class="mx-auto text-center max-w-148 pb-6 font-light leading-relaxed "
+     >
+    
+        
+        Technology is changing quickly. I share occasional insights, practical ideas, and updates on software engineering, AI, automation, data, and emerging technologies.
+        
+    
+</div>
+
+    <div class="mx-auto text-center max-w-148 pb-6 font-light leading-relaxed "
+     >
+    
+        
+        Sign up for the newsletter to stay informed!
+        
+    
+</div>
+
+    <div class="mx-auto max-w-2xl w-full">
+        
+
+<div data-fs-success>Thank you for subscribing!</div>
+<div data-fs-error>
+    Submission failed.
+    
+        
+            Contact us at augustin.consulting.ltd@gmail.com.
+        
+    
+        
+    
+</div>
+<form id="newsletter-form" class="text-left">
+    <div class="space-y-2 " >
+    
+        
+
+<label
+    class="
+    text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70
+    
+        
+    
+    
+    
+    
+    "
+    class="
+    
+    
+    " {{ attrs }}
+>
+    
+    <label for="id_email">Email:</label>
+
+</label>
+
+
+        <input
+    class="
+    flex
+    h-9
+    w-full
+    rounded-md
+    border
+    border-input
+    bg-transparent
+    px-3
+    py-1
+    text-sm
+    shadow-xs
+    transition-colors
+    file:border-0
+    file:bg-transparent
+    file:text-sm
+    file:font-medium
+    placeholder:text-muted-foreground
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:cursor-not-allowed
+    disabled:opacity-50
+    md:text-sm
+    
+    "
+    type="email" id="id_email" placeholder="example@email.com" name="email" value="" data-fs-field
+>
+    
+</input>
+
+        <div class="text-[0.8rem] font-medium text-destructive " data-fs-error="email">
+    
+        
+</div>
+
+        <p class="text-sm text-muted-foreground " >
+  
+            
+        
+</p>
+
+    
+</div>
+
+    
+    <input type="hidden" name="subject" value="Newsletter" data-fs-field />
+    <input type="hidden" name="message" value="Newsletter: True" data-fs-field />
+    
+    <div class="text-right">
+        
+<button
+    class="
+    inline-flex
+    items-center
+    justify-center
+    gap-2
+    whitespace-nowrap
+    rounded-md
+    text-sm
+    font-medium
+    transition-colors
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:pointer-events-none
+    disabled:opacity-50
+    [&_svg]:pointer-events-none
+    [&_svg]:size-4
+    [&_svg]:shrink-0
+
+    bg-primary text-primary-foreground shadow-sm hover:bg-primary/90
+    
+
+    h-9 px-4 py-2
+    
+
+    
+    "
+    type="submit" data-fs-submit-btn
+>
+    
+            Join Newsletter
+        
+</button>
+
+    </div>
+</form>
+
+    </div>
+
+</section>
+   	
+  
+</div>
+
+			</div>
+			
+
+
+<footer class="flex justify-center text-center bg-background text-muted-foreground p-10">
+  <aside class="flex flex-col items-center">
+    <img src="/static/favicon.svg" alt="Logo" width="60" height="60">
+    <p>
+      Augustin Consulting Ltd
+      <br />
+      Independent software consultancy
+      <br />
+      Est. 2021
+    </p>
+    <p class="text-sm pt-2">
+       
+      
+      Copyright &copy; 2026 Augustin Consulting Ltd - All rights reserved.
+    </p>
+  </aside>
+  
+</footer>
+
+			<div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+			    <div class="py-3 ">
+    <a 
+        href="#"
+        title="Back to top"
+        aria-label="Back to top"
+        class="bg-background hover:bg-muted shadow-xl size-12 rounded-full drop-shadow-lg flex justify-center items-center hover:drop-shadow-2xl transition-[box-shadow,translate,filter] duration-300 hover:-translate-y-1.5">
+        <i data-lucide="arrow-up" class="text-primary size-5"></i>
+    </a>
+</div>
+			    
+<div 
+    class="flex flex-col gap-2 "
+    x-data="{
+        closed: $persist([]).as('closed_alerts'),
+        closeAlert(id) {
+            if (!this.closed.includes(id)) {
+                this.closed.push(id);
+            }
+        }
+    }">
+    
+        <div x-show="!closed.includes('toast-1')">
+
+<div id=toast-1
+    x-data="{
+    isVisible: true,
+    timeoutId: null,
+
+    show() {
+        this.isVisible = true;
+        // Clear any existing timeout
+        if (this.timeoutId) {
+            clearTimeout(this.timeoutId);
+        }
+
+        // Auto-hide after duration
+        this.timeoutId = setTimeout(() => {
+            this.hide();
+        }, 3000);
+    },
+
+    hide() {
+        this.isVisible = false;
+    }
+  }"
+    @show-toast.window="
+    if($event.detail === 'toast-1' || $event.detail.value === 'toast-1') {
+        show();
+    } else {
+    console.error('Toast failed to show');
+    }"
+    x-show="isVisible"
+    x-transition:enter="transition ease-out duration-300"
+    x-transition:enter-start="opacity-0 transform translate-y-full"
+    x-transition:enter-end="opacity-100 transform translate-y-0"
+    x-transition:leave="transition ease-in duration-200"
+    x-transition:leave-start="opacity-100 transform translate-x-0"
+    x-transition:leave-end="opacity-0 transform translate-x-full"
+    class="relative"
+    role="alert"
+    class="relative"
+>
+    
+    
+
+<div class="
+    group pointer-events-auto relative flex w-full items-center justify-between space-x-2 overflow-hidden rounded-md border p-4 pr-6 shadow-lg transition-all
+
+    border bg-background text-foreground
+    
+    "
+    role="alert"
+>
+  <div class="flex flex-row w-full items-center space-x-6">
+    <i data-lucide="info"></i>
+    <div class="grid gap-1 max-w-64">
+        <p class="text-sm font-semibold [&+div]:text-xs">Let’s Work Together!</p>
+        <p class="text-sm opacity-90">Ready to get started? Get in touch today to book your initial consultation.</p>
+        
+    </div>
+    
+        
+            
+
+<div
+  x-data="{
+    open: false,
+
+    showDialog() {
+      this.open = true;
+      document.body.classList.add('overflow-hidden');
+    },
+
+    hideDialog() {
+      this.open = false;
+      document.body.classList.remove('overflow-hidden');
+    }
+  }"
+  x-init="
+    $watch('open', value => {
+      if (value) {
+        document.body.classList.add('overflow-hidden');
+      } else {
+        document.body.classList.remove('overflow-hidden');
+      }
+    })
+  "
+  @show-dialog.window="showDialog()"
+  @keydown.escape.window="if (open) hideDialog()"
+  
+>
+  
+    
+
+
+  
+<button
+    class="
+    inline-flex
+    items-center
+    justify-center
+    gap-2
+    whitespace-nowrap
+    rounded-md
+    text-sm
+    font-medium
+    transition-colors
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:pointer-events-none
+    disabled:opacity-50
+    [&_svg]:pointer-events-none
+    [&_svg]:size-4
+    [&_svg]:shrink-0
+
+    bg-primary text-primary-foreground shadow-sm hover:bg-primary/90
+    
+
+    h-9 px-4 py-2
+    
+
+    
+    "
+    @click.stop="showDialog()" class="" {{ attrs }}
+>
+    
+    
+        
+    
+  
+</button>
+
+
+
+    <div
+  x-show="open"
+  x-transition:enter="ease-out duration-300"
+  x-transition:enter-start="opacity-0"
+  x-transition:enter-end="opacity-100"
+  x-transition:leave="ease-in duration-200"
+  x-transition:leave-start="opacity-100"
+  x-transition:leave-end="opacity-0"
+  class="fixed inset-0 z-50 flex items-center justify-center z-60! text-left"
+  x-cloak
+  role="dialog"
+  aria-modal="true"
+>
+  <!-- Backdrop -->
+  <div class="fixed inset-0 bg-background/80 backdrop-blur-xs" aria-hidden="true" @click="hideDialog"></div>
+
+  <!-- Dialog -->
+  <div
+    x-transition:enter="ease-out duration-300"
+    x-transition:enter-start="opacity-0 scale-95"
+    x-transition:enter-end="opacity-100 scale-100"
+    x-transition:leave="ease-in duration-200"
+    x-transition:leave-start="opacity-100 scale-100"
+    x-transition:leave-end="opacity-0 scale-95"
+    @click.away="hideDialog"
+    class="fixed z-50 grid w-full max-w-lg gap-4 border bg-background p-6 shadow-lg sm:rounded-lg md:w-full z-60! text-left"
+    x-init="$nextTick(() => { $el.querySelector('button, [tabindex], input, select, textarea') && $el.querySelector('button, [tabindex], input, select, textarea').focus() })"
+    tabindex="-1"
+    class="z-60! text-left"
+  >
+    
+<button
+    class="
+    inline-flex
+    items-center
+    justify-center
+    gap-2
+    whitespace-nowrap
+    rounded-md
+    text-sm
+    font-medium
+    transition-colors
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:pointer-events-none
+    disabled:opacity-50
+    [&_svg]:pointer-events-none
+    [&_svg]:size-4
+    [&_svg]:shrink-0
+
+    hover:bg-accent hover:text-accent-foreground
+    
+
+    h-9 px-4 py-2
+    
+
+    
+    absolute right-4 top-4 data-[state=open]:bg-accent data-[state=open]:text-muted-foreground
+    
+    "
+    type="button" class="absolute right-4 top-4 data-[state=open]:bg-accent data-[state=open]:text-muted-foreground" @click="hideDialog"
+>
+    
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+        <path d="M18 6 6 18"></path>
+        <path d="m6 6 12 12"></path>
+      </svg>
+      <span class="sr-only">Close</span>
+    
+</button>
+
+    
+        <div class="flex flex-col space-y-1.5 text-center sm:text-left " >
+  
+            <h2 class="text-lg font-semibold leading-none tracking-tight " >
+  Contact
+</h2>
+
+            <p class="text-sm text-muted-foreground " >
+  
+                <p class="py-4">Send us a message by <a href="#">email</a>, or use this form.</p>
+            
+</p>
+
+        
+</div>
+
+        
+
+<div data-fs-success>Thank you for your message!</div>
+<div data-fs-error>
+    Submission failed.
+    
+        
+            Contact us at augustin.consulting.ltd@gmail.com.
+        
+    
+        
+    
+</div>
+<form id="contact-form" class="space-y-4">
+    <div class="space-y-2 " >
+    
+        
+
+<label
+    class="
+    text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70
+    
+        
+    
+    
+    
+    
+    "
+    class="
+    
+    
+    " {{ attrs }}
+>
+    
+    <label for="id_email">Email:</label>
+
+</label>
+
+
+        <input
+    class="
+    flex
+    h-9
+    w-full
+    rounded-md
+    border
+    border-input
+    bg-transparent
+    px-3
+    py-1
+    text-sm
+    shadow-xs
+    transition-colors
+    file:border-0
+    file:bg-transparent
+    file:text-sm
+    file:font-medium
+    placeholder:text-muted-foreground
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:cursor-not-allowed
+    disabled:opacity-50
+    md:text-sm
+    
+    "
+    type="email" id="id_email" placeholder="example@email.com" name="email" value="" data-fs-field
+>
+    
+</input>
+
+        <div class="text-[0.8rem] font-medium text-destructive " data-fs-error="email">
+    
+        
+</div>
+
+        <p class="text-sm text-muted-foreground " >
+  
+            
+        
+</p>
+
+    
+</div>
+
+    
+    <div class="space-y-2 " >
+    
+        
+
+<label
+    class="
+    text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70
+    
+        
+    
+    
+    
+    
+    "
+    class="
+    
+    
+    " {{ attrs }}
+>
+    
+    <label for="id_subject">Subject:</label>
+
+</label>
+
+
+        <input
+    class="
+    flex
+    h-9
+    w-full
+    rounded-md
+    border
+    border-input
+    bg-transparent
+    px-3
+    py-1
+    text-sm
+    shadow-xs
+    transition-colors
+    file:border-0
+    file:bg-transparent
+    file:text-sm
+    file:font-medium
+    placeholder:text-muted-foreground
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:cursor-not-allowed
+    disabled:opacity-50
+    md:text-sm
+    
+    "
+    type="text" id="id_subject" placeholder="Subject" name="subject" value="" data-fs-field
+>
+    
+</input>
+
+        <div class="text-[0.8rem] font-medium text-destructive " data-fs-error="subject">
+    
+        
+</div>
+
+        <p class="text-sm text-muted-foreground " >
+  
+            
+        
+</p>
+
+    
+</div>
+
+    
+    <div class="space-y-2 " >
+    
+        
+
+<label
+    class="
+    text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70
+    
+        
+    
+    
+    
+    
+    "
+    class="
+    
+    
+    " {{ attrs }}
+>
+    
+    <label for="id_message">Message:</label>
+
+</label>
+
+
+        <textarea
+    class="
+    flex
+    min-h-[60px]
+    w-full
+    rounded-md
+    border
+    border-input
+    bg-transparent
+    px-3
+    py-2
+    text-sm
+    shadow-xs
+    placeholder:text-muted-foreground
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:cursor-not-allowed
+    disabled:opacity-50
+
+    
+        h-50
+    
+    "
+    id="id_message" placeholder="Message" class="h-50" name="message" value="" data-fs-field
+>
+</textarea>
+
+        <div class="text-[0.8rem] font-medium text-destructive " data-fs-error="message">
+    
+        
+</div>
+
+        <p class="text-sm text-muted-foreground " >
+  
+            
+        
+</p>
+
+    
+</div>
+
+
+    <div class="space-y-2 " >
+    
+        
+
+<div x-data="{ switchOn: true }" class="flex items-center justify-center space-x-2">
+    <label @click="$refs.switchButton.click(); $refs.switchButton.focus()" :id="$id('switch')" 
+        class="text-sm select-none"
+        x-cloak>
+        
+            Stay in the loop with periodic industry insights and updates from our team.
+        
+    </label>
+
+    <input id="thisId" type="checkbox" name="newsletter" class="hidden" :checked="switchOn">
+
+    <button 
+        x-ref="switchButton"
+        type="button" 
+        @click="switchOn = ! switchOn"
+        :class="switchOn ? 'bg-primary' : 'bg-muted'" 
+        class="relative inline-flex h-6 py-0.5 ml-4 focus:outline-none rounded-full w-10"
+        x-cloak>
+        <span :class="switchOn ? 'translate-x-[18px]' : 'translate-x-0.5'" class="w-5 h-5 duration-200 ease-in-out bg-background rounded-full shadow-md"></span>
+    </button>
+</div>
+
+    
+</div>
+
+    
+    <div class="text-right">
+        
+<button
+    class="
+    inline-flex
+    items-center
+    justify-center
+    gap-2
+    whitespace-nowrap
+    rounded-md
+    text-sm
+    font-medium
+    transition-colors
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:pointer-events-none
+    disabled:opacity-50
+    [&_svg]:pointer-events-none
+    [&_svg]:size-4
+    [&_svg]:shrink-0
+
+    bg-primary text-primary-foreground shadow-sm hover:bg-primary/90
+    
+
+    h-9 px-4 py-2
+    
+
+    
+    "
+    type="submit" data-fs-submit-btn
+>
+    
+            Send Message
+        
+</button>
+
+    </div>
+</form>
+
+
+    
+  </div>
+</div>
+
+
+</div>
+
+
+        
+        
+<button
+    class="
+    inline-flex
+    items-center
+    justify-center
+    gap-2
+    whitespace-nowrap
+    rounded-md
+    text-sm
+    font-medium
+    transition-colors
+    focus-visible:outline-hidden
+    focus-visible:ring-1
+    focus-visible:ring-ring
+    disabled:pointer-events-none
+    disabled:opacity-50
+    [&_svg]:pointer-events-none
+    [&_svg]:size-4
+    [&_svg]:shrink-0
+
+    hover:bg-accent hover:text-accent-foreground
+    
+
+    size-9
+    
+
+    
+    absolute right-1 top-1 rounded-md p-1 text-foreground/50 opacity-100 transition-opacity hover:text-foreground focus:opacity-100 focus:outline-hidden focus:ring-1 group-hover:opacity-100 group-[.destructive]:text-red-300 hover:group-[.destructive]:text-red-50 focus:group-[.destructive]:ring-red-400 focus:group-[.destructive]:ring-offset-red-600
+    
+    "
+    @click="closeAlert('toast-1')" class="absolute right-1 top-1 rounded-md p-1 text-foreground/50 opacity-100 transition-opacity hover:text-foreground focus:opacity-100 focus:outline-hidden focus:ring-1 group-hover:opacity-100 group-[.destructive]:text-red-300 hover:group-[.destructive]:text-red-50 focus:group-[.destructive]:ring-red-400 focus:group-[.destructive]:ring-offset-red-600"
+>
+    
+            <i data-lucide="x" class="size-4"></i>
+        
+</button>
+
+    
+  </div>
+</div>
+
+
+</div>
+
+</div>
+
+    
+</div>
+
+			</div>
+			
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js" integrity="sha256-cHVO4dqZfamRhWD7s4iXyaXWVK10odD+qp4xidFzqTI=" crossorigin="anonymous"></script>
+
+
+<!-- Inject the data into the DOM -->
+<script id="cta-plot-data" type="application/json">{"labels": ["Revenue Growth", "Cost Reduction", "Operational Efficiency", "Customer Experience", "Innovation", "Risk \u0026 Resilience", "Decision-Making"], "data": {"client_a": [65, 59, 90, 81, 56, 55, 60], "client_b": [28, 48, 40, 19, 96, 27, 100]}}</script>
+
+<script>
+const ctaData = JSON.parse(document.getElementById('cta-plot-data').textContent);
+
+const data = {
+    labels: ctaData.labels,
+    datasets: [{
+        label: 'Client A',
+        data: ctaData.data.client_a,
+        fill: true,
+        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        borderColor: 'rgb(255, 99, 132)',
+        pointBackgroundColor: 'rgb(255, 99, 132)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgb(255, 99, 132)'
+    }, {
+        label: 'Client B',
+        data: ctaData.data.client_b,
+        fill: true,
+        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+        borderColor: 'rgb(54, 162, 235)',
+        pointBackgroundColor: 'rgb(54, 162, 235)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgb(54, 162, 235)'
+    }]
+};
+
+function getRadarOptions() {
+    const style = getComputedStyle(document.documentElement);
+    return {
+        tension: 0.2, 
+        elements: {
+            line: {
+                borderWidth: 3
+            }
+        }, 
+        plugins: {
+            legend: {
+                display: false
+            }, 
+            tooltip: { 
+              enabled: false 
+            }
+        },
+        scales: {
+            r: {
+                angleLines: {
+                    color: style.getPropertyValue('--radar-angle-line').trim() || 'rgba(0, 0, 0, 0.3)'
+                },
+                grid: {
+                    color: style.getPropertyValue('--radar-grid-line').trim() || 'rgba(0, 0, 0, 0.1)'
+                },
+                pointLabels: {
+                    display: false, 
+                    // Negative padding pulls labels inside the outer perimeter
+                    padding: -75, 
+                    // Centers label text along the radial axis
+                    centerPointLabels: true,
+                    color: style.getPropertyValue('--radar-point-label').trim() || '#333',
+                    font: {
+                        size: 14
+                    }
+                },
+                ticks: {
+                    display: false, 
+                    color: style.getPropertyValue('--radar-tick-label').trim() || '#666',
+                    backdropColor: 'transparent'
+                }
+            }
+        }
+    };
+}
+
+window.__radarCharts = window.__radarCharts || [];
+
+function initRadarCharts() {
+    document.querySelectorAll('.cta-chart').forEach((canvas) => {
+        if (Chart.getChart(canvas)) return;
+
+        const chart = new Chart(canvas, {
+            type: 'radar',
+            data: data,
+            options: getRadarOptions()
+        });
+
+        window.__radarCharts.push({ chart, getRadarOptions });
+    });
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initRadarCharts);
+} else {
+    initRadarCharts();
+}
+</script>
+<script>
+  window.formspree =
+    window.formspree ||
+    function () {
+      (formspree.q = formspree.q || []).push(arguments);
+    };
+  formspree("initForm", {
+    formElement: "#contact-form",
+    formId: "xnqwpeba",
+  });
+  formspree("initForm", {
+    formElement: "#newsletter-form",
+    formId: "xnqwpeba",
+  });
+
+  //  appends the newsletter subscription status to the message before submission
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contact-form');
+    if (form) {
+      form.addEventListener('submit', () => {
+        const messageTextarea = form.querySelector('textarea[name="message"]');
+        const switchInput = form.querySelector('input[name="newsletter"]');
+        
+        if (messageTextarea && switchInput) {
+          const isSubscribed = switchInput.checked;
+          messageTextarea.value += `\n\nNewsletter: ${isSubscribed ? 'True' : 'False'}`;
+        }
+      });
+    }
+  });
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script> 
+
+
+<script>
+function initThemeToggle() {
+  lucide.createIcons();
+
+  const toggleButtons = document.querySelectorAll('.theme-toggle');
+  const htmlElement = document.documentElement;
+
+  toggleButtons.forEach(button => {
+      button.addEventListener('click', () => {
+          // Theme
+          const isDark = htmlElement.classList.toggle('dark');
+          localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
+          // Charts
+          (window.__radarCharts || []).forEach(({ chart, getRadarOptions }) => {
+              chart.options = getRadarOptions();
+              chart.update();
+          });
+      });
+  });
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initThemeToggle);
+} else {
+    initThemeToggle();
+}
+</script>
 		</main>
 	</body>
-
 </html>
